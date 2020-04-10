@@ -13,7 +13,7 @@
     
 }
 .logo{
-    margin-top: 20px;
+    margin-top: 27px;
     margin-right: 50px;
     margin-left: 50px;
 
@@ -24,7 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    margin-top: 20px;    
+    margin-top: 27px;    
 }
 .mi-perfil{
    margin-top: 20px;
@@ -37,17 +37,27 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0em;
-    height: 50px;
+    height: 30px;
     margin-top: 20px;
-    border: solid white;
+    border: solid white 1.5px;
+    border-radius: 25%;
+    margin-right: 20px;
+}
+.mi-perfil a{
+    width: 30px;
+    padding: 10px;
+    padding-top: 0;
+
 }
 .mi-perfil p{
     margin: 0;
     color: white;
-    width: 100px;
+    width: 80px;
     padding: 0;
-    margin-left:20px ;
+    margin-left:12px ;
+    margin-top: 7px;
 }
 .mi-perfil i{
     color: white;
+    margin-top: 7px;
 }
