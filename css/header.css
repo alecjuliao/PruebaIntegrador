@@ -1,0 +1,53 @@
+
+
+.main-header{
+    background-color: rgb(36, 35, 35);
+}
+
+.header-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 100px;
+    
+}
+.logo{
+    margin-top: 20px;
+    margin-right: 50px;
+    margin-left: 50px;
+
+}
+.opciones{
+    width: 300px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 20px;    
+}
+.mi-perfil{
+   margin-top: 20px;
+   margin-right: 50px;
+    
+
+}
+.mi-perfil{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0em;
+    height: 50px;
+    margin-top: 20px;
+    border: solid white;
+}
+.mi-perfil p{
+    margin: 0;
+    color: white;
+    width: 100px;
+    padding: 0;
+    margin-left:20px ;
+}
+.mi-perfil i{
+    color: white;
+}
