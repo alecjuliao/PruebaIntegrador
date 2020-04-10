@@ -26,6 +26,7 @@
     justify-content: space-between;
     margin-top: 27px;    
 }
+}
 .mi-perfil{
    margin-top: 20px;
    margin-right: 50px;
@@ -40,7 +41,7 @@
     height: 30px;
     margin-top: 20px;
     border: solid white 1.5px;
-    border-radius: 25%;
+    border-radius: 100px;
     margin-right: 20px;
 }
 .mi-perfil a{
