@@ -1,4 +1,58 @@
 body{
     margin: 0;
-    background-color: black;
+    background-color: rgb(54, 51, 51);
+}
+
+.top-listas{
+    display: flex;
+    flex-direction: column;
+    padding: 50px;
+    
+}
+h3 a{
+
+    color:rgb(200, 200, 200);
+    text-decoration: none;
+    
+    
+}
+
+.listatop{
+    height: 200px;
+    background-color: rgba(30, 30, 30, 0.4);
+    margin: 10px 20px;
+    border-radius: 45px;
+    
+}
+
+
+.listatop ul{
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+    height: 90%;
+    
+    
+}
+
+.listatop ul li {
+    background-color: rgb(54, 71, 66);
+    border-style: none;
+    width: 15%;
+    height:85% ;
+    list-style: none;
+    text-align: center;
+    margin-bottom: 4px;
+    border-radius: 100%;
+    
+
+    
+    
+
+}
+.listatop ul li a{
+    color: white;
+    text-decoration: none;
+    
+
 }
