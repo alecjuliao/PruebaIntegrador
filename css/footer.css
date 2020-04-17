@@ -1,0 +1,45 @@
+.imgdeezer {
+    width: 15%;
+    margin-left: 4%;
+}
+
+.imgdeezer:hover {
+    -webkit-border-radius:50%;
+box-shadow: 0px 0px 15px 15px #6b04f1;
+-webkit-box-shadow: 0px 0px 15px 15px #0018f3;
+transform: rotate(360deg);
+-webkit-transform: rotate(360deg);
+}
+
+.nombresa {
+    color: aliceblue;
+    margin-left: 5%;
+}
+
+.nombresa:hover {
+   color: royalblue;
+   font-size: large;
+   font-family: fantasy;
+}
+
+.nombresm {
+    color: aliceblue;
+    margin-left: 5%;
+}
+
+.nombresm:hover {
+    color: royalblue;
+    font-size: large;
+    font-family: fantasy;
+ }
+
+.nombresmp {
+    color: aliceblue;
+    margin-left: 5%;
+}
+
+.nombresmp:hover {
+    color: royalblue;
+    font-size: large;
+    font-family: fantasy;
+ }
