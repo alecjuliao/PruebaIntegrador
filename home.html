@@ -1,108 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/home.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
-    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="css/home.css">
+        <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+        
 
-</head>
-<body>
-    <div class="container">
-        <header class="main-header">
-            <div class="header-container">
-                <div class="logo">
-                    <a href="home.html"><img src="" alt="logo"></a>               
-                </div>
-                <div class="opciones">
-                    <div>
-                        <a href="generon.html"></a> Generos  |
+    </head>
+    <body>
+        <div class="container">
+            <header class="main-header">
+                <div class="header-container">
+                    <div class="logo">
+                        <a href="home.html"><img src="" alt="logo"></a>               
+                                  
                     </div>
-                    <div>
-                       <a href="artistas.html"></a> Artistas  |
+                    <div class="opciones">
+                        <div>
+                            <a href="generon.html"></a> Generos  |
+                        </div>
+                        <div>
+                        <a href="artistas.html"></a> Artistas  |
+                        </div>
+                        <div>
+                            <a href="podcasts.html"></a> Posdcasts
+                        </div>
+                        <div>
+                            <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
+                        </div>
+
                     </div>
-                    <div>
-                        <a href="podcasts.html"></a> Posdcasts
+                    <div class="mi-perfil">
+                        <a href="about.html">perfil<i class="far fa-user-circle"></i></a>
+                        <p>perfil</p>
                     </div>
-                    <div>
-                        <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
-                    </div>
-
-                </div>
-                <div class="mi-perfil">
-                    <a href="about.html"><i class="far fa-user-circle"></i></a>
-                    <p>perfil</p>
-                </div>
-            </div>    
-
-
-
-
-
-
-
-
-
-
-
-        </header>
-        <section class="top-listas">
+                </div>    
             
-            <div class="Explora">
-                <h3><a  href="#" >Explorá el ranking de los albumes más escuchados</a></h3>
-            </div>
-            
-            <div class="listatop primera">
-                <!-- <a href="#" class="Explora">Explora los albumes mas escuchados</a>
-                     TAMBIEN PUEDE IR DENTRO DEL DIV LISTATOP -->
-                <ul>
-                    <li class="top1"><a href="#">Nombre</a></li>
-                    <li class="top2"><a href="#">Nombre</a></li>
-                    <li class="top3"><a href="#">Nombre</a></li>
-                    <li class="top4"><a href="#">Nombre</a></li>
-                    <li class="top5"><a href="#">Nombre</a></li>
-                </ul>
 
 
-            </div>
 
-            <div class="Explora">
-                <h3><a  href="#" >Explorá el ranking de los artistas más escuchados</a></h3>
-            </div>
-            <div class="listatop segunda">
-                <!-- <a href="#" class="Explora">Explora los artistas mas escuchados</a>
-                     TAMBIEN PUEDE IR DENTRO DEL DIV LISTATOP -->
-                <ul>
-                    <li class="top1"><a href="#">Nombre</a></li>
-                    <li class="top2"><a href="#">Nombre</a></li>
-                    <li class="top3"><a href="#">Nombre</a></li>
-                    <li class="top4"><a href="#">Nombre</a></li>
-                    <li class="top5"><a href="#">Nombre</a></li>
-                </ul>
 
-            </div>
-            <div class="Explora">
-                <h3><a  href="#" >Explorá el ranking de los tracks más escuchados</a></h3>
-            </div>
-            <div class="listatop tercera">
-                <!-- <a href="#" class="Explora">Explora los tracks mas escuchados</a>
-                     TAMBIEN PUEDE IR DENTRO DEL DIV LISTATOP -->
-                <ul>
-                    <li class="top1"><a href="#">Nombre</a></li>
-                    <li class="top2"><a href="#">Nombre</a></li>
-                    <li class="top3"><a href="#">Nombre</a></li>
-                    <li class="top4"><a href="#">Nombre</a></li>
-                    <li class="top5"><a href="#">Nombre</a></li>
-                </ul>
 
-            </div>
-        </section>
-        <footer>
+            </header>
+            <section>
+                
+                <div class="Explora">
+                    <h3><a  href="#" >Explorá el ranking de los artistas más escuchados</a></h3>
+                </div>
+                <div class="listatop segunda">
+                    <!-- <a href="#" class="Explora">Explora los artistas mas escuchados</a>
+                        TAMBIEN PUEDE IR DENTRO DEL DIV LISTATOP -->
+                    <ul>
+                        <li class="top1"><a href="#">Nombre</a></li>
+                        <li class="top2"><a href="#">Nombre</a></li>
+                        <li class="top3"><a href="#">Nombre</a></li>
+                        <li class="top4"><a href="#">Nombre</a></li>
+                        <li class="top5"><a href="#">Nombre</a></li>
+                    </ul>
 
-        </footer>
-    </div>
-</body>
+                </div>
+                <div class="Explora">
+                    <h3><a  href="#" >Explorá el ranking de los tracks más escuchados</a></h3>
+                </div>
+                <div class="listatop tercera">
+                    <!-- <a href="#" class="Explora">Explora los tracks mas escuchados</a>
+                        TAMBIEN PUEDE IR DENTRO DEL DIV LISTATOP -->
+                    <ul>
+                        <li class="top1"><a href="#">Nombre</a></li>
+                        <li class="top2"><a href="#">Nombre</a></li>
+                        <li class="top3"><a href="#">Nombre</a></li>
+                        <li class="top4"><a href="#">Nombre</a></li>
+                        <li class="top5"><a href="#">Nombre</a></li>
+                    </ul>
+                </div>
+            </section>
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>
