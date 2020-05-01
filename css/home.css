@@ -45,16 +45,22 @@ body{
     margin: 0px;
     border-radius: 100%;
     list-style: none;
-    
+    position: relative;
     
   
     
     
   
   }
+
+  .listatop ul li :hover img{
+    opacity: 0.4;
+    transition: 0.1s ease;
+  }
   .listatop ul li a img{
     width: 100%;
     border-radius: 100px;
+    
   
   }
   
@@ -74,4 +80,14 @@ body{
   .listatop ul li a h6{
     color: rgba(228, 217, 217, 0.3);
     margin: 0px;
+  }
+  .fa-play-circle-o{
+    position: absolute;
+    color: rgb(131, 123, 123);
+    transition: .1s ease;
+    opacity: 0.4;
+    top: 33%;
+    left: 39%;
+    
+
   }
