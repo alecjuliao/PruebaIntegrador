@@ -1,0 +1,144 @@
+
+.container{
+    width: 100%;
+  }
+  
+  main{
+    width: 90%;
+    margin:0  auto;
+  }
+  
+  /* SECCION BANNER + TITULO */
+  .banner{
+    width: 40%;
+   
+  }
+  .banner img{
+    width: 80%;
+    padding: 0px 10%;
+    opacity: 0.75;
+    
+    
+  }
+  .nombre-podcast{
+    width: 100%;
+   
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    height: 50px;
+    font-size: larger;
+    font-weight: bold;
+    
+  }
+  
+  /* SECCION BARRA INFORMACION */
+  .barra-informacion{
+    width: 100%;
+    background-color: rgba(43, 44, 43,0.4);
+    border-radius: 50px;
+    
+    
+  }
+  .informacion-artista{
+    display: flex;
+    justify-content: space-around;
+    
+    
+    
+  }
+  .informacion-artista a{
+   text-decoration: none;
+   color: white;
+    
+  }
+  .informacion-artista li{
+    list-style: none;
+    text-transform: capitalize;
+  } 
+  
+  /* SECCION CONTENIDO */
+  .container-contenido-artista{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgb(43, 44, 43,0.4);
+  }
+  
+  
+  /* SECCION CANCIONES */
+  .topcanciones-titulo h3{
+    color: white;
+    margin-left: 10%;
+  }
+  .topcanciones-titulo a{
+    text-decoration: none;
+  }
+  
+  
+  .container-contenido-artista .top-canciones{
+    width: 55%;
+    display: flex;
+    flex-direction: column;  
+  }
+  
+  
+  .container-contenido-artista .top-canciones ul{
+  height: 90%;
+  margin-top: 0;
+  }
+  
+  
+  .container-contenido-artista .top-canciones li{
+    background-color: rgb(54, 51, 51);
+  
+    height: 15%;
+    list-style: none;
+    margin: 3%;
+    border-radius: 40px;
+    
+  }
+  
+  .reseña {
+color: white;
+}
+  
+.locutor {
+width: 150px;
+height: 150px;
+border-radius: 100px;
+
+}   
+
+.locutor2  {
+  width: 150px;
+  
+} 
+
+label{ color:grey;}
+
+input[type = "radio"]{ display:none;}
+
+.clasificacion{
+    position: relative;
+    margin-left: 100%;
+    direction: rtl;/* right to left */
+    unicode-bidi: bidi-override;/* bidi de bidireccional */
+}
+label:hover{color:orange;}
+
+label:hover ~ label{color:orange;}
+    
+
+form.estrellass.clasificacion input {
+    margin-left: 100%;
+    display: inline;
+
+}
+
+form.estrellas textarea {
+    margin-left: 200px
+}
