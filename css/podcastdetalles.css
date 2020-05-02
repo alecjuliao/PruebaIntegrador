@@ -142,3 +142,26 @@ form.estrellass.clasificacion input {
 form.estrellas textarea {
     margin-left: 200px
 }
+
+
+.lista-canciones{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.lista-canciones form {
+width: 50%;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+
+}
+
+.comentarioss {
+margin-left: 460px;
+padding-right: 200px;
+
+}
