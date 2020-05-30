@@ -162,6 +162,7 @@ border-radius: 100%;
 @media (max-width:460px){
 .top-listas{
   padding: 4%;
+  
 }
 
 .listatop{
@@ -177,9 +178,7 @@ border-radius: 100%;
   display: none;
 }
 
-.mobile-home{
-  display: block;
-}
+
 
 
 
