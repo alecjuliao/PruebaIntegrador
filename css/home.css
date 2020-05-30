@@ -151,6 +151,10 @@ border-radius: 100%;
 
 }
 
+.mobile-home{
+  display: none;
+}
+
 
 @media (max-width:460px){
 .top-listas{
@@ -170,7 +174,9 @@ border-radius: 100%;
   display: none;
 }
 
-
+.mobile-home{
+  display: block;
+}
 
 
 

@@ -130,6 +130,10 @@
 }
 
 @media (max-width:460px){
+    #header{
+        padding-top: 2%;
+        padding-bottom: 2%;
+    }
     .logo .nombre{
         display: none;
 
@@ -149,20 +153,81 @@
     }
     .opciones .header{
         justify-content: center;
-        width: 45%;
-        padding: auto;
+        width: 40%;
+        font-size: small;
+        margin: auto;
+        margin-top: 2%;
     }
     /* .opciones .header a{
         margin: auto;
     } */
     .opciones .search{
         width: 45%;
+        margin-top: 2%;
+
     }
-    .opciones .search i{
+    /* .opciones .search i{
         display: none;
-    }
+    } */
     .opciones input{
-        width: 90%;
+        width: 60%;
+        height: 68%;
+
+    
         
     }
+    .mi-perfil{
+        width: 10%;
+    }
+    .mi-perfil i{
+        font-size:large;
+        margin: auto;
+    }
+
+    .top-listas{
+        display: none;
+    }
+    .explora{
+        font-size: small;
+    }
+    .listatop{
+        padding: auto;
+        width: 95%;
+        margin: auto;
+    }
+    .listatop ul{
+        padding: 0;
+        margin: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95%;
+
+    }
+    .listatop li{
+        width: 35%;
+    }
+
+    .contenedor-nombres{
+        width:70%;
+        margin: auto;
+        
+    }
+    .logo-deezer{
+        width: 15%;
+        margin: auto;
+    }
+    .contenedor-nombres .nombres{
+        width: fit-content;
+        font-size: x-small;
+    }
+    .contenedor-nombres a{
+        margin: 1%;
+        text-decoration: none;
+    }
+
+    /* FOOTER */
+
+
 }

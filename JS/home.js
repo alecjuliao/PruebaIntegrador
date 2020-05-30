@@ -31,7 +31,9 @@ window.onload = function(){
             contenido +='<a href="/html/album.html">'
             contenido +='<img class="imagen" src="'+element.cover_medium+'" alt="Abbey-Road">'
             contenido +='<h5 class="nombre-album">'+element.title +'</h5>'
-            contenido +='<i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>'
+            // contenido +='<i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>'  PROBANDO SIN EL PLAY 
+            // CIRCLE EN HOME
+
             contenido +=' <a href="/html/artista.html"><h6 class="nombre-artista">'+element.artist.name +'</h6></a>'
             contenido +='</a> '
             contenido +='</li> '
@@ -76,7 +78,8 @@ window.onload = function(){
             contenido +='<a href="/html/artista.html">'
             contenido +='<img src="'+element.picture_medium+'" alt="imagen">'
             contenido +='<h5 class="nombre-artista">'+element.name +'</h5>'
-            contenido +='<i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>'
+            // contenido +='<i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>' PROBANDO SIN EL PLAY 
+            // CIRCLE EN HOME
             contenido +='</a> '
             contenido +='</li> '
       
@@ -119,7 +122,8 @@ window.onload = function(){
             contenido +='<a href="/html/track.html">'
             contenido +='<img src="'+element.album.cover_medium+'" alt="imagen">'
             contenido +='<h5 class="nombre-track">'+element.title +'</h5>'
-            contenido +='<i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>'
+            // contenido +='<i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i>' PROBANDO SIN EL PLAY 
+            // CIRCLE EN HOME
              contenido +=' <a href="/html/artista.html"><h6 class="nombre-track">'+element.artist.name +'</h6></a>'
             contenido +='</a> '
             contenido +='</li> '
