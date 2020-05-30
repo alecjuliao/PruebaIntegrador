@@ -1,0 +1,311 @@
+<!-- Estoy tratando de hacer una unica pagina de detalle para que dependiendo de donde 'clikea', te rediriga
+a la pagina de detalle correspondiente. Por ahora, no me sale. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/css/footer.css">
+  <link rel="stylesheet" href="/css/header.css">
+  <link rel="stylesheet" href="/css/album.css">
+  <link rel="stylesheet" href="/css/artista.css">
+  <link rel="stylesheet" href="/css/podcastdetalles.css">
+  <link rel="stylesheet" href="/css/track.css">
+  <script src="/JS/album.js"></script>
+  <script src="/JS/artista.js"></script>
+  <script src="/JS/track.js"></script>
+  
+ 
+<body>
+
+
+
+  
+<!-- HEADER -->
+  <div id="header" class="header-container">
+    <div class="logo">
+        <a href="home.html"><img class="logoimg" src="/img/logo.png" alt="logo"></a>    
+      </div>           
+    <div class="nombre">
+      <!-- <a href="home.html">M.A.M MUSIC</a>   -->
+      
+      
+     
+      </div>
+    
+    <div class="opciones">
+        <div class="header generos">
+         <a href="/html/generos.html">Generos</a> 
+        </div>
+        <div class="header artistas">
+            <a href="/html/home.html#exploraArtistas"> Artistas</a>
+        </div>
+        <div class="header podcast">
+            <a href="/html/podcast.html"> Podcasts</a>
+        </div>
+        <div class="header albumes">
+           <a href="/html/home.html#exploraAlbumes"> Albumes</a>
+       </div>
+       <div class="header tracks">
+           <a href="/html/home.html#exploraTracks"> Tracks</a>
+       </div>
+       
+        <div class="search">
+         <i class="fas fa-search fa-xs "></i> 
+         <span><input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()"></span>
+     </div>
+
+    </div>   
+    <div class="mi-perfil">
+        <a href="/html/playlist.html"><i class="far fa-user-circle fa-2x"></i></a>
+        
+    </div>
+</div>  
+
+
+<!-- ALBUM -->
+<div class="container-contenido-album">
+     
+  <!-- SECCION CANCIONES -->
+  <div class="top-canciones">
+        <!-- <div class="topcanciones-titulo">
+
+          <h3 class="canciones-mas-escuchadas">Disfruta del album!</h3>
+          
+        </div> -->
+
+
+      <ul class="lista-canciones">
+        <!-- <li class="canciones"><a href="#"><p>titulo del tema + nombre del artista + signo play con fa fa</p></a></li> -->
+        <li class="cancion">
+            <div class="cancion-play">
+                <i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+                <a href="#"></a>
+            </div> 
+            <div class="duracion">
+              
+            </div>
+            <div class="agregar">
+             
+           </div>
+        </li>
+          
+        <!-- <div class="play-circle"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></div> -->
+        
+      </ul>
+
+
+
+
+       
+      </div>
+        
+
+ 
+  <!-- SECCION ALBUMES -->
+  <!-- <div class="top-albumes">
+    <div class="topalbumes-titulo"><h3>Los albumes del artista</h3></div>
+
+
+    <ul class="lista-albumes">
+     
+      
+
+    </ul>
+  </div> -->
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+<!-- ARTISTA -->
+
+<main>
+  <div class="nombre-imagen">
+               <div class="foto-artista">
+                     
+               </div>
+               <div class="nombre-artista">
+                  
+
+               </div>
+              
+     </div>
+
+
+
+
+<div id="container-contenido-artista" class="container-contenido-artista">
+
+ <!-- SECCION CANCIONES -->
+ <div class="top-canciones">
+       <div class="topcanciones-titulo">
+
+         <h3 class="canciones-mas-escuchadas">Las canciones mas escuchadas</h3>
+         
+       </div>
+
+
+     <ul class="lista-canciones">
+       <!-- <li class="canciones"><a href="#"><p>titulo del tema + nombre del artista + signo play con fa fa</p></a></li> -->
+       <li class="cancion">
+           <div class="cancion-play">
+               <i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+               <a href="#"></a>
+           </div> 
+           <div class="duracion">
+             
+           </div>
+       </li>
+         
+       <!-- <div class="play-circle"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></div> -->
+       
+     </ul>
+
+
+
+
+      
+     </div>
+       
+
+
+ <!-- SECCION ALBUMES -->
+ <div class="top-albumes">
+   <div class="topalbumes-titulo"><h3>Los albumes mas escuchados</h3></div>
+
+
+   <ul class="lista-albumes">
+    
+     
+
+   </ul>
+ </div>
+</div>
+
+
+</main>
+<!-- TRACK -->
+<main>
+
+        
+  <div id="titulo-cancion"class="titulo-cancion">
+   <a href="/track.html#titulo-cancion"><h1></h1></a>
+  </div>
+  <div  class="button">
+   <button id="button">Agregar a mi Playlist</button>
+
+  </div>
+
+
+<div  class="contenedor-cancion">
+
+     <div class="lista-canciones"></div>
+       
+       
+     
+  
+
+</div>
+
+               <div class="album-artista">
+                       <div class="parte-album"></div>
+                         
+                       <div class="parte-artista"></div>
+               </div>
+
+
+
+</main>
+
+
+
+<!-- PODCAST -->
+<main>
+  <div class="banner">
+        <img src="/img/podcasts/6501552013068_XXL.jpg" alt="">
+  </div>
+  <div class="nombre-podcast">
+    
+  <h2>El Futuro</h2>
+
+  </div>
+<div class="barra-informacion">
+  <ul class="informacion-artista">
+    <li class="informacion-general"><a href="#"><h4>Reseña</h4></a></li>
+    
+  </ul>
+  
+
+</div>
+<div class="container-contenido-artista">
+<div class="top-canciones">
+<div class="topcanciones-titulo"><a href="#"><h3></h3></a></div>
+<div class="lista-canciones">
+    <div>
+        <h2 class="reseña">Un podcast donde nos preguntamos cómo es estar viviendo en el futuro. Qué nos pasa con internet y con la tecnología en nuestro día a día. por Ramiro Terraza y Ulises Ribas</h2>
+        <img src="/img/podcasts/ramiroterraza.jpg" alt="" class="locutor">
+        <img src="/img/podcasts/ulisesribas.jpg" alt="" class="locutor">
+    </div>
+
+  <form class="estrellass">
+      <p class="clasificacion">
+        <input id="radio1" type="radio" name="estrellas" value="5"><!--
+        --><label for="radio1">★</label><!--
+        --><input id="radio2" type="radio" name="estrellas" value="4"><!--
+        --><label for="radio2">★</label><!--
+        --><input id="radio3" type="radio" name="estrellas" value="3"><!--
+        --><label for="radio3">★</label><!--
+        --><input id="radio4" type="radio" name="estrellas" value="2"><!--
+        --><label for="radio4">★</label><!--
+        --><input id="radio5" type="radio" name="estrellas" value="1"><!--
+        --><label for="radio5">★</label>
+      </p>
+
+      <textarea name="comentarios" rows="10" cols="40" class="comentarioss">Dejanos tu opinion!</textarea>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+</div>
+
+</main>
+
+
+
+<!-- FOOTER -->
+
+<footer>
+  <div class="contenedor-nombres">
+     
+      <a href="https://www.instagram.com/alecjuliao/"  target="blank" class="nombres">Alec Juliao</a>
+      <a href="https://www.instagram.com/marcoshogg_/" target="blank" class="nombres">Marcos Hogg</a>
+     <a href="https://www.instagram.com/manupascua2" target="blank" class="nombres">Manuel Pascua</a>
+
+</div>
+
+
+
+    <div class="logo-deezer">
+     <a href="https://www.deezer.com/es/"><img class="imgdeezer" src="/img/deezer-e1526709129795.png" alt=""></a>
+    </div>
+
+</footer>
+
+</body>
+</html>
