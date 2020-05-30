@@ -5,42 +5,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="css/generos.css">
-    <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="/css/generos.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
     <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
     
 
 </head>
 <body>
 
-        <header class="main-header">
-            <div class="header-container">
-                <div class="logo">
-                    <a href="home.html"><img class="logoimg" src="img/logo.png" alt="logo"></a>               
-                </div>
-                <div class="opciones">
-                    <div>
-                     <a href="generon.html"></a> Generos  |
-                    </div>
-                    <div>
-                        <a href="artistas.html"></a> Artistas  |
-                    </div>
-                    <div>
-                        <a href="podcasts.html"></a> Posdcasts
-                    </div>
-                    <div>
-                        
-                        <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
-                    </div>
+    <div id="header" class="header-container">
+        <div class="logo">
+            <a href="home.html"><img class="logoimg" src="/img/logo.png" alt="logo"></a>               
+        <div class="nombre">
+          <!-- <a href="home.html">M.A.M MUSIC</a>   -->
+          
+          
+      </div>
+    </div>
+        
+        <div class="opciones">
+            <div class="header generos">
+             <a href="/html/generos.html">Generos</a> 
+            </div>
+            <div class="header artistas">
+                <a href="/html/home.html#exploraArtistas"> Artistas</a>
+            </div>
+            <div class="header podcast">
+                <a href="/html/podcast.html"> Podcasts</a>
+            </div>
+            <div class="header albumes">
+               <a href="/html/home.html#exploraAlbumes"> Albumes</a>
+           </div>
+           <div class="header tracks">
+               <a href="/html/home.html#exploraTracks"> Tracks</a>
+           </div>
+           
+            <div class="search">
+             <i class="fas fa-search fa-xs "></i> 
+             <span><input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()"></span>
+         </div>
 
-                </div>   
-                <div class="mi-perfil">
-                    <a href="about.html"><i class="far fa-user-circle"></i></a>
-                    
-                </div>
-            </div>    
+        </div>   
+        <div class="mi-perfil">
+            <a href="about.html"><i class="far fa-user-circle fa-2x"></i></a>
             
+        </div>
+    </div>  
             </header>
         <main>
             <section class="generosprincipal">
@@ -50,12 +61,12 @@
                 <div class="listageneros primera">
                   <a href=""> <h1>Podcasts más escuchados</h1></a>
                     <ul class="img-generos">
-                        <li class="gen1"><a href="podcastdetalles.html"><img src="img/podcasts/6501552013068_XXL.jpg" alt=""><h2 class="titulo-genero">El Futuro</h2></a></li>
-                        <li class="gen2"><a href="podcastdetalles.html"><img src="img/podcasts/demhumano.jpg" alt=""><h2 class="titulo-genero">Demasiado Humano</h2></a></li>
-                        <li class="gen3"><a href="podcastdetalles.html"><img src="img/podcasts/b088d28d1e3b12bf2d729d355bba2979.png" alt=""><h2 class="titulo-genero">Entiende Tu Mente</h2></a></li>
-                        <li class="gen4"><a href="podcastdetalles.html"><img src="img/podcasts/medguiada.jpg" alt=""><h2 class="titulo-genero">Meditacion Guiada</h2></a></li>
-                        <li class="gen5"><a href="podcastdetalles.html"><img src="img/podcasts/NP_Cover_II_Historias_Pigna_3000x3000.jpg" alt=""><h2 class="titulo-genero">Nuestra Historia</h2></a></li>
-                        <li class="gen6"><a href="podcastdetalles.html"><img src="img/podcasts/saludmental.jpg" alt=""><h2 class="titulo-genero">Salud Mental</h2></a></li>
+                        <li class="gen1"><a href="podcastdetalles.html"><img src="/img/podcasts/6501552013068_XXL.jpg" alt=""><h2 class="titulo-genero">El Futuro</h2></a></li>
+                        <li class="gen2"><a href="podcastdetalles.html"><img src="/img/podcasts/demhumano.jpg" alt=""><h2 class="titulo-genero">Demasiado Humano</h2></a></li>
+                        <li class="gen3"><a href="podcastdetalles.html"><img src="/img/podcasts/b088d28d1e3b12bf2d729d355bba2979.png" alt=""><h2 class="titulo-genero">Entiende Tu Mente</h2></a></li>
+                        <li class="gen4"><a href="podcastdetalles.html"><img src="/img/podcasts/medguiada.jpg" alt=""><h2 class="titulo-genero">Meditacion Guiada</h2></a></li>
+                        <li class="gen5"><a href="podcastdetalles.html"><img src="/img/podcasts/NP_Cover_II_Historias_Pigna_3000x3000.jpg" alt=""><h2 class="titulo-genero">Nuestra Historia</h2></a></li>
+                        <li class="gen6"><a href="podcastdetalles.html"><img src="/img/podcasts/saludmental.jpg" alt=""><h2 class="titulo-genero">Salud Mental</h2></a></li>
                         <!-- corregir las clases de los gen -->
                     </ul>
     
@@ -68,12 +79,12 @@
                 <div class="gen-alternativos">
                     
                     <ul class="img-generos">
-                        <li class="gen1"><a href="podcastdetalles.html"><img src="img/podcasts/6501552013068_XXL.jpg" alt=""><h2 class="titulo-genero">El Futuro</h2></a></li>
-                        <li class="gen2"><a href="podcastdetalles.html"><img src="img/podcasts/demhumano.jpg" alt=""><h2 class="titulo-genero">Demasiado Humano</h2></a></li>
-                        <li class="gen3"><a href="podcastdetalles.html"><img src="img/podcasts/b088d28d1e3b12bf2d729d355bba2979.png" alt=""><h2 class="titulo-genero">Entiende Tu Mente</h2></a></li>
-                        <li class="gen4"><a href="podcastdetalles.html"><img src="img/podcasts/medguiada.jpg" alt=""><h2 class="titulo-genero">Meditacion Guiada</h2></a></li>
-                        <li class="gen5"><a href="podcastdetalles.html"><img src="img/podcasts/NP_Cover_II_Historias_Pigna_3000x3000.jpg" alt=""><h2 class="titulo-genero">Nuestra Historia</h2></a></li>
-                        <li class="gen6"><a href="podcastdetalles.html"><img src="img/podcasts/saludmental.jpg" alt=""><h2 class="titulo-genero">Salud Mental</h2></a></li>
+                        <li class="gen1"><a href="podcastdetalles.html"><img src="/img/podcasts/6501552013068_XXL.jpg" alt=""><h2 class="titulo-genero">El Futuro</h2></a></li>
+                        <li class="gen2"><a href="podcastdetalles.html"><img src="/img/podcasts/demhumano.jpg" alt=""><h2 class="titulo-genero">Demasiado Humano</h2></a></li>
+                        <li class="gen3"><a href="podcastdetalles.html"><img src="/img/podcasts/b088d28d1e3b12bf2d729d355bba2979.png" alt=""><h2 class="titulo-genero">Entiende Tu Mente</h2></a></li>
+                        <li class="gen4"><a href="podcastdetalles.html"><img src="/img/podcasts/medguiada.jpg" alt=""><h2 class="titulo-genero">Meditacion Guiada</h2></a></li>
+                        <li class="gen5"><a href="podcastdetalles.html"><img src="/img/podcasts/NP_Cover_II_Historias_Pigna_3000x3000.jpg" alt=""><h2 class="titulo-genero">Nuestra Historia</h2></a></li>
+                        <li class="gen6"><a href="podcastdetalles.html"><img src="/img/podcasts/saludmental.jpg" alt=""><h2 class="titulo-genero">Salud Mental</h2></a></li>
                         <!-- corregir las clases de los gen -->
                         
                     </ul>
@@ -83,34 +94,20 @@
             </section>            
         </main>
         <footer>
-        <div class="izq">
-        <div>
-            <a href="https://www.deezer.com/es/">
-            <img class="imgdeezer" src="img/deezer-e1526709129795.png" alt=""></a>
-        </div>  
-
-
+            <div class="contenedor-nombres">
                
-        <div class="nombresig">
-                <a href="https://www.instagram.com/alecjuliao/"><p class="nombresa" > Alec Juliao</p></a>
-                 <a href="https://www.instagram.com/marcoshogg_/"><p class="nombresm">Marcos Hogg</p></a>
-               <a href="https://www.instagram.com/manupascua2"> <p class="nombresmp">Manuel Pascual</p> </a>
-        </div>
+                <a href="https://www.instagram.com/alecjuliao/"  target="blank" class="nombres">Alec Juliao</a>
+                <a href="https://www.instagram.com/marcoshogg_/" target="blank" class="nombres">Marcos Hogg</a>
+               <a href="https://www.instagram.com/manupascua2" target="blank" class="nombres">Manuel Pascua</a>
+         
          </div>
-        <div class="slider">
-             <ul>   
-                  <li><img src="img/frases slider/slider1.png" alt=""></li>
-                    <li><img src="img/frases slider/slider2.jpg" alt=""></li>
-                     <li><img src="img/frases slider/slider 3.jpg" alt=""></li>
-                     <li><img src="img/frases slider/slider4.jpg" alt=""></li>
-                     
-             </ul>
-
-
-        </div>
-        
-        
-        
-        </footer>
+         
+         
+         
+              <div class="logo-deezer">
+               <a href="https://www.deezer.com/es/"><img class="imgdeezer" src="/img/deezer-e1526709129795.png" alt=""></a>
+              </div>
+         
+         </footer>
 
 </body>
