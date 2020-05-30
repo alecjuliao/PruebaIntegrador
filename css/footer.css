@@ -43,3 +43,24 @@ transition: 1s ease;
    font-family: fantasy;
 }
 
+@media (max-width:460px){
+    .contenedor-nombres{
+        width:70%;
+        margin: auto;
+        
+    }
+    .logo-deezer{
+        width: 15%;
+        margin: auto;
+    }
+    .contenedor-nombres .nombres{
+        width: fit-content;
+        font-size: x-small;
+    }
+    .contenedor-nombres a{
+        margin: 1%;
+        text-decoration: none;
+    }
+
+}
+

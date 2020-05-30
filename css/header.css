@@ -88,41 +88,16 @@
     margin-top: 3%;
     margin-right: 2%;
     
-    /* margin-top: 100px;
-    margin-right: 50px;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    margin: 0em;
-    height: 30px;
-     margin-top: 20px;
-     border: solid white 1.5px;
-    border-radius: 100px;
-    margin-right: 20px;
     
-    no veo a donde va esto*/
 }
 .mi-perfil a{
-    width: 100%;
-    
-
-    /* display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap-reverse; 
-    no veo donde va esto*/
+    width: 100%
+  
 
 }
-/* .mi-perfil p{
-    margin: 0;
-    color: white;
-    width: 80px;
-    padding: 0;
-    margin-left:12px ;
-    margin-top: 7px;
-    
-    no entiendo a que esta modificando este 
-} */
+.search{
+    width: 20%;
+}
 
 .mi-perfil i{
     color: rgba(199, 226, 226);
@@ -209,25 +184,6 @@
         width: 35%;
     }
 
-    .contenedor-nombres{
-        width:70%;
-        margin: auto;
-        
-    }
-    .logo-deezer{
-        width: 15%;
-        margin: auto;
-    }
-    .contenedor-nombres .nombres{
-        width: fit-content;
-        font-size: x-small;
-    }
-    .contenedor-nombres a{
-        margin: 1%;
-        text-decoration: none;
-    }
-
-    /* FOOTER */
-
+   
 
 }
