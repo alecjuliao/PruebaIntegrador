@@ -98,7 +98,17 @@ body{
   opacity: 0.4;
   transition: 0.1s ease;
 }
-.listatop ul li a img{
+.primera img{
+  width: 100%;
+  /* border-radius: 100%; */
+  /* tener como opcion sin border radius. las imagenes cuadradas */
+}
+.segunda  img{
+  width: 100%;
+  border-radius: 100%;
+  /* tener como opcion sin border radius. las imagenes cuadradas */
+}
+.tercera img{
   width: 100%;
   border-radius: 100%;
   /* tener como opcion sin border radius. las imagenes cuadradas */
