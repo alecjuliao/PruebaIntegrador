@@ -1,93 +1,167 @@
 body{
-    margin: 0;
-    background-color: rgb(54, 51, 51);
-  }
-  
-  
-  .top-listas{
-    padding: 50px;
-    
-  }
-  h3 a{
-  
-    color:rgb(200, 200, 200);
-    text-decoration: none;
-    
-    
-  }
-  
-  .listatop{
-    height: 310px;
-    background-color: rgba(30, 30, 30, 0.4);
-    margin: 10px 20px;
-    border-radius: 45px;
-    padding: 20px;
-    box-sizing: border-box;
-    
-    
-  }
-  
-  
-  .listatop ul{
-    display: flex;
-    justify-content: space-between;
-    height: 90%;
-    
-    
-    
-  }
-  
-  .listatop ul li {
-    
-    
-    width: 16%;
-    height: fit-content;
-    margin: 0px;
-    border-radius: 100%;
-    list-style: none;
-    position: relative;
-    
-  
-    
-    
-  
-  }
+  margin: 0;
+  /* background-color: rgb(54, 51, 51);
+  background-color: rgb(20, 38, 41); */
+  background-color: rgb(9, 17, 19);
+}
 
-  .listatop ul li :hover img{
-    opacity: 0.4;
-    transition: 0.1s ease;
-  }
-  .listatop ul li a img{
-    width: 100%;
-    border-radius: 100px;
-    
-  
-  }
-  
-  .listatop ul li a {
-    text-decoration: none;
-    text-transform: capitalize;
-    text-align: center;
-   
-    
-  }
-  .listatop ul li a h5{
-    color: white;
-    margin-top: 5px;
-    margin-bottom: 15px;
-    
-  }
-  .listatop ul li a h6{
-    color: rgba(228, 217, 217, 0.3);
-    margin: 0px;
-  }
-  .fa-play-circle-o{
-    position: absolute;
-    color: rgb(131, 123, 123);
-    transition: .1s ease;
-    opacity: 0.4;
-    top: 30%;
-    left: 36%;
-    
 
-  }
+.top-listas{
+  padding: 50px;
+  
+}
+.explora{
+  margin:auto;
+  text-transform: capitalize;
+  width: 80;
+  margin-bottom: 2%;
+  font-size: x-large;
+}
+.explora h3{
+  margin:auto;
+  width: fit-content;
+}
+.explora h3 a{
+
+  /* color: rgba(199, 226, 226); */
+  /* color: rgb(161, 202, 202); */
+  color: rgba(199, 226, 226);
+  text-decoration: none;
+  
+  
+  
+}
+.volver{
+  font-size: medium;
+  color: rgba(199, 226, 226);
+  text-decoration: none;
+  
+}
+.volverMenu{
+  margin: auto;
+  height: fit-content;
+}
+.volverMenu h4{
+  width: fit-content;
+  /* margin-top: auto; */
+  margin-left: 47%;
+  
+}
+.volver a{
+  margin:auto;
+}
+
+.listatop{
+  /* height: 310px; */
+  background-color: rgba(30, 30, 30, 0.4);
+  margin: 10px 20px;
+  border-radius: 15px ; 
+  padding: 20px;
+  box-sizing: border-box;
+  
+  
+  
+}
+
+
+
+
+.listatop ul{
+  display: flex;
+  justify-content: space-between;
+  /* height: 90%; */
+  flex-wrap: wrap;
+
+  
+  
+  
+}
+
+.listatop ul li {
+  
+  
+  width: 18%;
+  height: fit-content;
+  margin: 0px;
+  list-style: none;
+  position: relative;
+  margin-bottom: 3%;
+
+  
+
+  
+  
+
+}
+
+.listatop ul li :hover img{
+  opacity: 0.4;
+  transition: 0.1s ease;
+}
+.listatop ul li a img{
+  width: 100%;
+  border-radius: 100%;
+  /* tener como opcion sin border radius. las imagenes cuadradas */
+}
+
+/* .listatop .artista{
+border-radius: 100%;
+} */
+
+.listatop ul li a {
+  text-decoration: none;
+  text-transform: capitalize;
+  text-align: center;
+  
+  
+}
+.listatop ul li a h5{
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 15px;
+  font-size: medium;
+  
+}
+.listatop ul li a h6{
+  /* color: rgba(136, 255, 187, 0.3); */
+  /* color: rgb(174, 227, 233); */
+  /* color: rgb(255, 255, 255, 0.5); */
+  color: rgba(199, 226, 226);
+  margin: 0px;
+  font-size: small;
+}
+
+.fa-play-circle-o{
+  position: absolute;
+  color: rgb(131, 123, 123);
+  transition: .1s ease;
+  opacity: 0.4;
+  top: 30%;
+  left: 36%;
+
+}
+
+
+@media (max-width:460px){
+.top-listas{
+  padding: 4%;
+}
+
+.listatop{
+  margin: 0;
+  padding: 0;
+}
+
+.contenedor-albumes li{
+  width: 30%;
+}
+
+.fa-play-circle-o{
+  display: none;
+}
+
+
+
+
+
+}

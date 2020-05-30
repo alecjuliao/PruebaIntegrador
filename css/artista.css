@@ -1,0 +1,428 @@
+body{
+  margin: 0;
+  background-color: rgb(54, 51, 51);
+  background-color: rgb(20, 38, 41);
+  background-color: rgb(9, 17, 19);
+}
+.container{
+  width: 100%;
+  background-color: rgb(9, 17, 19);
+}
+
+main{
+  width: 90%;
+  margin:0  auto;
+}
+
+.nombre-imagen{
+display: flex;
+flex-direction: column;
+width: 90%;
+margin: auto;
+height: fit-content;
+box-sizing: border-box;
+margin-bottom: 4%;
+margin-top: 2%;
+
+}
+
+/* SECCION BANNER + TITULO */
+.foto-artista{
+  width: 35%; 
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+
+  
+ 
+  
+  
+}
+.nombre-artista{
+width: fit-content;
+margin: 0;
+
+
+
+}
+
+.foto-artista img{
+  opacity: 0.7;
+  width: 100%;
+  border-radius: 50%;
+  
+  
+}
+
+
+
+.nombre-artista{
+  width: 100%;
+ 
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+  height: fit-content;
+  font-size: larger;
+  font-weight: bold;
+  
+}
+.nombre-artista a{
+  text-decoration: none;
+  color: white;
+  width: fit-content;
+  margin: auto;
+  
+}
+.nombre-artista h1{
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 2%;
+  margin-top: 2%;
+  box-sizing: border-box;
+ 
+} 
+.numero-fans{
+  color: white;
+  text-align: center ;
+  font-size: small;
+  height: fit-content;
+  text-transform: initial;
+  width: fit-content;
+  margin: auto;
+  
+
+}
+
+
+
+
+/* SECCION CONTENIDO */
+.container-contenido-artista{
+display: flex;
+width: 100%;
+justify-content: space-between;
+padding: 10px;
+box-sizing: border-box;
+background-color: rgb(43, 44, 43,0.4);
+/* height: fit-content; */
+border-top-right-radius: 2rem;
+border-top-left-radius: 2rem;
+margin-bottom: 5%;
+}
+
+
+
+/* SECCION CANCIONES */
+
+.topcanciones-titulo .canciones-mas-escuchadas{
+  color: white;
+  margin: auto;
+  width: fit-content;
+  
+}
+
+
+.topcanciones-titulo{
+  margin: 0;
+  margin-top: 35px;
+}
+.container-contenido-artista .top-canciones{
+  width: 55%;
+  display: flex;
+  flex-direction: column; 
+  height: 550px; 
+}
+
+
+.container-contenido-artista .top-canciones ul{
+height: 100%;
+margin-top: 5%;
+}
+
+
+.lista-canciones li{
+  background-color: rgb(33, 44, 44,0.6);
+  height: 15%;
+  list-style: none;
+  margin: 4%;
+  border-radius: 40px;
+  width: 85%;
+  padding-left: 13%;
+  padding-top: 4%;
+  box-sizing: border-box;
+
+  
+  
+
+}
+.lista-canciones a{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  margin: auto;
+  width: 100%;
+  
+}
+
+
+
+
+.contenedor-cancion{
+  position: relative;
+  height: 90%;
+}
+.cancion{
+position: relative;
+display: flex;
+}
+
+.cancion-play{
+  width: 75%;
+  margin: 0;
+}
+
+
+#play-circle-cancion{
+  color: white;
+  transition: .1s ease;
+  opacity: 0.4;
+  position: absolute;
+  left: 5%;
+  top: 25%;
+ 
+}
+
+
+
+
+.topcanciones-titulo a{
+color: white;
+text-decoration: none;
+width: fit-content;
+
+}
+.cancion-play a:hover{
+text-decoration: underline;
+transition: .1s ease;
+}
+
+.duracion{
+  width: 5%;
+  margin: 0;
+  color: white;
+
+}
+
+.agregar{
+  margin-top:1%;
+  margin-left: 8%;
+  width: 3%;
+}
+#agregar-a-playlist{
+  color: rgba(199, 226, 226);
+  
+  
+  }
+
+
+
+/* SECCION ALBUMES */
+.container-contenido-artista .top-albumes{
+  width: 40%;
+  margin-right: 3%;
+ 
+}
+.topalbumes-titulo{
+  margin-top:35px;
+  
+}
+.topalbumes-titulo a{
+  text-decoration: none;
+}
+.topalbumes-titulo h3{
+  color: white;
+  margin: auto;
+  width: fit-content;
+  
+}
+
+
+.container-contenido-artista .top-albumes .lista-albumes{
+  text-decoration: none;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 5%;
+  
+}
+
+
+.container-contenido-artista .top-albumes .lista-albumes a{
+width: 100%;
+margin-bottom: 3%;
+text-decoration: none;
+}
+
+
+.container-contenido-artista .top-albumes .album{
+  width: 48%;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.fa-play-circle-o{
+  position: absolute;
+  top: 33%;
+  left: 38%;
+  color: white;
+  transition: .1s ease;
+  opacity: 0.4;
+  
+}
+
+
+.lista-albumes :hover {
+  font-weight: inherit;
+  text-decoration: underline;
+  
+
+}
+
+
+.container-contenido-artista .top-albumes .album h5{
+  margin: auto;
+  color: white;
+  text-transform: uppercase;
+  width: fit-content;
+
+  
+}
+
+
+.container-contenido-artista .top-albumes .album img{
+  width: 95%;
+  /* border-radius: 50%; */
+  
+}
+.container-contenido-artista .top-albumes .lista-albumes  :hover img {
+  transition: .1s ease;
+  opacity: 0.2;
+}
+
+/* Informacion del Artista. Con java apareceria en el lugar de General cuando se
+apriete en "Informacion del Artista"*/
+
+.mas-sobre-el-artista{
+  background-color: rgb(43, 44, 43,0.4);
+  color: white;
+  padding: 3% 5%;
+  box-sizing: border-box;
+  margin-top: 3%;
+
+}
+.mas-sobre-el-artista a{
+  text-decoration: none;
+  color: white;
+  
+}
+
+/* ///////////////////////////// MOBILE VERSION */
+@media (max-width:460px){
+  /* .main{
+    width: 450px;
+  } */
+  /* .container{
+    height:fit-content;
+    box-sizing: border-box;
+    padding-bottom: 5%;
+  } */
+  .nombre-imagen{
+    box-sizing: border-box;
+    height: fit-content;
+
+  }
+  .foto-artista{
+    width: 100%;
+    height: fit-content;
+      
+ }
+ .foto-artista img{
+   width: 100%;
+   height: 50%;
+ }
+ 
+  .nombre-artista{
+    width: 100%;
+    font-size: small;
+  }
+
+  .barra-informacion{
+    display: none;
+  }
+  .container-contenido-artista{
+    border-radius: 0;
+    margin-bottom: 5%;
+    box-sizing: border-box ;
+    display: flex;
+    flex-direction: column;
+    width: 98%;
+    padding: 0px;
+    height: fit-content;
+     
+
+  }
+  .top-canciones{
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    /* box-sizing: border-box; */
+    /* height: fit-content;
+    width: 100%;
+     */
+    
+  }
+  .lista-canciones{
+    padding: 0px;
+    margin: 0px;
+    width: 99%;
+  }
+
+ .lista-canciones li{
+   width: 100%;
+ }
+/* 
+.lista-canciones{
+  padding: 0px;
+  margin: 0px;
+  width: 99%;
+}
+
+.lista-canciones li{
+  padding: 5%;
+  margin: 5%;
+  margin-left: 0px;
+}
+.lista-canciones li a{
+  margin-left: 25%;
+}
+
+
+.agregar{
+  margin-left: 12%;
+}
+
+.cancion-play a{
+  font-size: small;
+}
+.cancion-play i{
+  size: x-small;
+}
+.duracion{
+  font-size: x-small;
+} */
+
+}
+

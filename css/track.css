@@ -1,0 +1,247 @@
+body{
+  margin: 0;
+  background-color: rgb(54, 51, 51);
+  background-color: rgb(20, 38, 41);
+  background-color: rgb(9, 17, 19);
+}
+.container{
+
+  width: 100%;
+  background-color: rgb(9, 17, 19);
+  
+}
+.titulo-cancion {
+  color: white;
+  text-transform: uppercase;
+  margin: auto;
+  width: fit-content;
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  font-size: xx-large;
+}
+.titulo-cancion a{
+  color: rgb(196, 231, 231);
+  text-decoration: none;
+}
+.album-artista{
+  width: 65%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: auto;
+  box-sizing: border-box;
+  /* margin-top: 5%; */
+  background-color: rgb(43, 44, 43,0.4);
+  margin-bottom: 4rem;
+  padding-top: 3rem;
+  border-radius: 1rem;
+  
+}
+.album-artista a{
+  color: white;
+  text-decoration: none;
+}
+
+.parte-album{
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 5%;
+}
+.parte-artista{
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-bottom: 5%;
+}
+
+.titulo{
+  margin: auto;
+  margin-bottom: 5%;
+  color: white;
+  text-transform: uppercase;
+  padding: auto;
+  width: fit-content;
+  font-size: x-large;
+
+
+}
+.titulo a{
+  width: fit-content;
+}
+.album-artista .parte-artista :hover .tituloEnlace{
+  text-decoration: underline;
+}
+.album-artista .parte-album :hover .tituloEnlace{
+  text-decoration: underline;
+}
+.titulo h4{
+  width: fit-content;
+  margin: auto;
+}
+.foto-album{
+  width: 80%;
+  height: 80%;
+  margin: auto;
+}
+
+.foto-artista{
+  width: 80%;
+  height:80% ;
+  margin: auto;
+}
+
+.foto-album img{
+  height: 100%;
+  width: 100%;
+  /* border-radius: 50%; */
+}
+.foto-artista img{
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+} 
+
+.parte-artista a :hover img{
+  transition: .1s ease;
+  opacity: 0.3;
+
+}
+.parte-album a :hover img{
+  transition: .1s ease;
+  opacity: 0.3;
+
+}
+
+.button{
+  justify-content: center;
+  width: 25%;
+  height: 3em;
+  margin: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
+button{
+  background-color: teal;
+  border-color: teal;
+  border-radius: 32px;
+  height: 100%;
+  width: 100%;
+  font-size: x-large;
+  color: white ;
+  margin: auto;
+
+}
+
+
+
+/* //cancion */
+
+.topcanciones-titulo {
+  color: white;
+  text-decoration: none;
+  width: fit-content;
+  width: 50%;
+  margin-top: 3%;
+  margin-left: 35%;
+
+  
+  }
+
+
+
+
+.lista-canciones{
+  background-color: rgb(33, 44, 44,0.6);
+  height: 40px;
+  list-style: none;
+  border-radius: 2rem;
+  width: 85%;
+  padding-left: 13%;
+  padding-top: 1%;
+  text-transform: capitalize; 
+}
+
+
+.top-canciones :hover .lista-canciones{
+  border: solid 0.06rem  rgba(199, 226, 226);
+  opacity: 0.4;
+  transition: 0.1s ease;
+}
+.lista-canciones a{
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  margin: auto;
+  width: 100%;
+  box-sizing: border-box;
+  
+}
+
+
+
+
+.contenedor-cancion{
+  position: relative;
+  height: 60px;
+  background-color: rgb(43, 44, 43,0.4);
+  padding-top: 20px;
+  width: 60%;
+  margin: auto;
+  border-radius: 2rem;
+  margin-bottom: 1rem;
+}
+
+
+
+.lista-canciones{
+position: relative;
+display: flex;
+margin: auto;
+justify-content: space-between;
+}
+
+.play{
+  width: 75%;
+  margin: 0;
+}
+
+
+#play-circle-cancion{
+  color: white;
+  transition: .1s ease;
+  opacity: 0.4;
+  position: absolute;
+  left: 5%;
+  top: 10%;
+ 
+}
+
+.lista-canciones{
+  box-sizing: border-box;
+}
+
+
+
+.cancion-play a:hover{
+text-decoration: underline;
+transition: .1s ease;
+}
+
+.duracion{
+  width: 5%;
+  margin-right: 10%;
+  color: white;
+
+}
+.agregar{
+  margin: auto;
+}
+
+#agregar-a-playlist{
+color: rgba(199, 226, 226);
+
+
+}
