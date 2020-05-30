@@ -102,16 +102,19 @@ body{
   width: 100%;
   /* border-radius: 100%; */
   /* tener como opcion sin border radius. las imagenes cuadradas */
+  border:rgb(22, 43, 48) solid .5rem ;
 }
 .segunda  img{
   width: 100%;
   border-radius: 100%;
   /* tener como opcion sin border radius. las imagenes cuadradas */
+  border:rgb(22, 43, 48) solid .5rem ;
 }
 .tercera img{
   width: 100%;
   border-radius: 100%;
   /* tener como opcion sin border radius. las imagenes cuadradas */
+  border:rgb(22, 43, 48) solid .5rem ;
 }
 
 /* .listatop .artista{
