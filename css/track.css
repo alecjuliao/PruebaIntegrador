@@ -245,3 +245,42 @@ color: rgba(199, 226, 226);
 
 
 }
+
+
+/* ///////////////////////////// MOBILE VERSION */
+@media (max-width:460px){
+  .titulo-cancion{
+    width: 90%;
+    margin:auto;
+  }
+.titulo-cancion h1{
+  width: fit-content;
+  
+}
+.titulo-cancion a{
+  margin-left: auto;
+}
+
+/* ESTOY TENIENDO PROBLEMAS CON CENTRAR EL TITULO H1 */
+.button{
+  width: 60%;
+}
+button{
+  width: 100%;
+}
+
+.contenedor-cancion{
+  width: 95%;
+}
+
+.album-artista{
+  width: 85%;
+}
+
+
+
+
+
+
+
+}

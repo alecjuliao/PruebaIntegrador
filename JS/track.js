@@ -13,9 +13,12 @@ window.onload =function(){
         var nombreCancion = information.title
         var nombreArtista = information.artist.name;
         var titulo = document.querySelector('h1')
+        var contenidoTitulo = ''
   
-  
-        titulo.innerHTML = nombreCancion
+        // 
+
+      contenidoTitulo += '<a href="../html/track.html">'+nombreCancion+'</a>'
+        titulo.innerHTML = contenidoTitulo
   
         var duracion = information.duration
         var tiempoCancion = duracion / 60
