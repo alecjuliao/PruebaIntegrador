@@ -47,7 +47,7 @@ window.onload = function(){
         contenido+='<li class="cancion">'
         contenido+='<div class="cancion-play">'
         contenido+='<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
-        contenido+='<a href="/html/track.html">'+element.title +'</a>'
+        contenido+='<a href="/html/track.html">'+element.title_short +'</a>'
         contenido+='</div> '
         contenido+='<div class="duracion">' + tiempoMinuto+':'+segundos + '</div>'+' '
         contenido+='<div class="agregar">'

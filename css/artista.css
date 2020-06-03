@@ -342,16 +342,18 @@ apriete en "Informacion del Artista"*/
   .nombre-imagen{
     box-sizing: border-box;
     height: fit-content;
+    margin-top: 10%;
+    margin-bottom:  10%;
 
   }
   .foto-artista{
-    width: 100%;
-    height: fit-content;
+    width: 80%;
+    margin: auto;
       
  }
  .foto-artista img{
    width: 100%;
-   height: 50%;
+   
  }
  
   .nombre-artista{
@@ -368,31 +370,72 @@ apriete en "Informacion del Artista"*/
     box-sizing: border-box ;
     display: flex;
     flex-direction: column;
-    width: 98%;
-    padding: 0px;
+    width: 100%;
+    padding: 3%;
     height: fit-content;
      
 
   }
-  .top-canciones{
+  main .container-contenido-artista .top-canciones{
     margin: 0px;
     padding: 0px;
-    display: flex;
-    /* box-sizing: border-box; */
-    /* height: fit-content;
-    width: 100%;
-     */
-    
+     width: 99%;
+     height: fit-content;
   }
   .lista-canciones{
     padding: 0px;
     margin: 0px;
     width: 99%;
+    
   }
 
  .lista-canciones li{
    width: 100%;
+   height: 55px;
+   padding: 0;
+   box-sizing: border-box;
+   margin-left: 0;
  }
+.cancion-play{
+  width: 55%;
+  margin:auto;
+  margin-left: 18%;
+}
+ main .container-contenido-artista .top-albumes{
+  margin: 0px;
+  padding: 0px;
+   width: 100%;
+   
+
+ }
+ .duracion{
+   margin:auto;
+ }
+ .agregar{
+   margin:auto;
+ }
+
+ .lista-albumes{
+   margin: auto;
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 1%;
+ }
+ .lista-albumes li{
+   width: 100%;
+ }
+ .album{
+   padding: auto;
+ }
+ .album  a{
+   width: 100%;
+ }
+ .album img{
+   width: 100%;
+ }
+
+
 /* 
 .lista-canciones{
   padding: 0px;
