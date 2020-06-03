@@ -217,11 +217,15 @@ ARRANCA MOBILE HOMBE CATEGORIAS */
   width: fit-content;
   text-decoration: none;
   color: rgba(199, 226, 226);
+  
 }
 #exploraMobile{
   width: fit-content;
   margin: auto;
   text-transform: capitalize;
+  margin-top: 8%;
+  margin-bottom: 10%;
+  font-size:larger;
 
 }
 
@@ -232,7 +236,8 @@ ARRANCA MOBILE HOMBE CATEGORIAS */
   width: 80%;
   margin: auto;
   margin-top: 8%;
-  margin-bottom: 8%;
+  margin-bottom: 15%;
+  padding-left: 0;
   padding-top: 4%;
   padding-bottom: 4%;
   
@@ -240,7 +245,7 @@ ARRANCA MOBILE HOMBE CATEGORIAS */
 
 }
 .categoria{
-  width: 40%;
+  width: 33%;
   list-style:none;
   margin-top: 4%;
   margin-bottom: 4%;
@@ -254,7 +259,7 @@ ARRANCA MOBILE HOMBE CATEGORIAS */
 }
 .categoria a{
   text-decoration: none;
-  color: rgb(162, 236, 236);
+  color: rgb(202, 238, 238);
   width: fit-content;
   margin: auto;
 }
@@ -263,7 +268,7 @@ ARRANCA MOBILE HOMBE CATEGORIAS */
 
 /* TERMINA MOIBLE HOME CATEGORIAS 
 
-ARRANCA MOBILE HOMBE LISTATOP*/
+ARRANCA MOBILE HOME LISTATOP*/
 .top-listas{
   width: 95%;
   padding: 0;
@@ -273,6 +278,8 @@ ARRANCA MOBILE HOMBE LISTATOP*/
 
 .explora{
         font-size: small;
+        margin-bottom: 5%;
+        font-size: large;
     }
     .listatop{
         padding: 4%;
@@ -286,11 +293,12 @@ ARRANCA MOBILE HOMBE LISTATOP*/
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: space-around;
         width: 99%;
 
     }
 main .listatop li{
-        width: 40%;
+        width: 30%;
         margin-bottom: 9%;
         
     }
@@ -299,15 +307,26 @@ main .listatop li img{
     border:rgb(22, 43, 48) solid .2rem ;
     }
 
-main .listatop li .nombre-album{
+main .primera li .nombre-album{
 margin-bottom: 2%;
 font-size: small;
     }
 
-main .listatop li .nombre-artista{
+main .primera li .nombre-artista{
       font-size: x-small;
     }
 
+main .segunda li .nombre-artista{
+      margin-bottom: 2%;
+      font-size: small;
+          }
+ main .tercera li .nombre-track{
+      margin-bottom: 2%;
+      font-size: small;
+        }    
+ main .primera li .nombre-track{
+          font-size: x-small;
+        }            
 main .volverMenu{
   margin: auto;
 }

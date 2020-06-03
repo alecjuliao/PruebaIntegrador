@@ -89,3 +89,11 @@
   animation-name: fade;
   animation-duration: 1.5s;
 }
+
+@media (max-width:460px){
+  .mySlides img{
+    border: rgba(82, 81, 81, 0.4) solid .5rem;
+  }
+  
+
+}
