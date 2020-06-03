@@ -264,14 +264,19 @@ ARRANCA MOBILE HOMBE CATEGORIAS */
 /* TERMINA MOIBLE HOME CATEGORIAS 
 
 ARRANCA MOBILE HOMBE LISTATOP*/
+.top-listas{
+  width: 95%;
+  padding: 0;
+  margin: auto;
+}
 
 
-    .explora{
+.explora{
         font-size: small;
     }
     .listatop{
-        padding: auto;
-        width: 95%;
+        padding: 4%;
+        width: 100%;
         margin: auto;
     }
     .listatop ul{
@@ -281,17 +286,47 @@ ARRANCA MOBILE HOMBE LISTATOP*/
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
-        width: 95%;
+        width: 99%;
 
     }
-    .listatop li{
-        width: 35%;
+main .listatop li{
+        width: 40%;
+        margin-bottom: 9%;
+        
     }
 
+main .listatop li img{
+    border:rgb(22, 43, 48) solid .2rem ;
+    }
 
+main .listatop li .nombre-album{
+margin-bottom: 2%;
+font-size: small;
+    }
+
+main .listatop li .nombre-artista{
+      font-size: x-small;
+    }
+
+main .volverMenu{
+  margin: auto;
+}
+main .volverMenu h4{
+  width: fit-content;
+  margin: auto;
+}
+main .volverMenu h4 a{
+  margin: auto;
+}
+
+main .tercera{
+  margin-bottom: 5%;
+}
+    
 
 
 /* TERMINA LISTATOP HOME MOBILE */
+
 
 
 
