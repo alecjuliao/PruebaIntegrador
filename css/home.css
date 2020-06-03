@@ -154,32 +154,150 @@ border-radius: 100%;
 
 }
 
+
+.headerMobile{
+  display: none;
+}
 .mobile-home{
   display: none;
 }
 
 
+
 @media (max-width:460px){
-.top-listas{
-  padding: 4%;
+/* ARRANCA HEADER  */
+  #header{
+    display: none;
+  }
+  .headerMobile{
+    display: block;
+    background-color: rgba(30, 30, 30, 0.4);
+    display:flex;
+    height: 3rem;
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+  }
+  header .opciones{
+    width: 70%;
+  }
+  header .search{
+    box-sizing: border-box;
+    width: 90%;
+    margin: auto;
   
+  }
+  header .search span{
+    width: 100%;
+  }
+  header .search input{
+    width: 80%;
+  }
+  
+  header .logo{
+    margin: 1%;
+    width: 15%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  header .mi-perfil{
+    width: 15%;
+    margin: 1%;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+/* ////TERMINA HEADER  
+
+ARRANCA MOBILE HOMBE CATEGORIAS */
+
+.mobile-home{
+  display: block;
+}
+#exploraMobile a{
+  width: fit-content;
+  text-decoration: none;
+  color: rgba(199, 226, 226);
+}
+#exploraMobile{
+  width: fit-content;
+  margin: auto;
+  text-transform: capitalize;
+
 }
 
-.listatop{
-  margin: 0;
-  padding: 0;
-}
-
-.contenedor-albumes li{
-  width: 30%;
-}
-
-.fa-play-circle-o{
-  display: none;
-}
-
-
-
+.categoriasMobile{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: rgba(30, 30, 30, 0.4);
+  width: 80%;
+  margin: auto;
+  margin-top: 8%;
+  margin-bottom: 8%;
+  padding-top: 4%;
+  padding-bottom: 4%;
+  
 
 
 }
+.categoria{
+  width: 40%;
+  list-style:none;
+  margin-top: 4%;
+  margin-bottom: 4%;
+}
+
+.categoria h5{
+  margin: auto;
+  text-transform: capitalize;
+  margin: auto;
+  width: fit-content;
+}
+.categoria a{
+  text-decoration: none;
+  color: rgb(162, 236, 236);
+  width: fit-content;
+  margin: auto;
+}
+
+
+
+/* TERMINA MOIBLE HOME CATEGORIAS 
+
+ARRANCA MOBILE HOMBE LISTATOP*/
+
+
+    .explora{
+        font-size: small;
+    }
+    .listatop{
+        padding: auto;
+        width: 95%;
+        margin: auto;
+    }
+    .listatop ul{
+        padding: 0;
+        margin: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 95%;
+
+    }
+    .listatop li{
+        width: 35%;
+    }
+
+
+
+
+/* TERMINA LISTATOP HOME MOBILE */
+
+
+
+
+
+
+
+
+} 

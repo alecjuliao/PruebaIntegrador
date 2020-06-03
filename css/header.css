@@ -159,30 +159,7 @@
         margin: auto;
     }
 
-    .top-listas{
-        display: none;
-    }
-    .explora{
-        font-size: small;
-    }
-    .listatop{
-        padding: auto;
-        width: 95%;
-        margin: auto;
-    }
-    .listatop ul{
-        padding: 0;
-        margin: auto;
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 95%;
-
-    }
-    .listatop li{
-        width: 35%;
-    }
+  
 
    
 
