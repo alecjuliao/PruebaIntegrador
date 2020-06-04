@@ -48,11 +48,11 @@ window.onload = function(){
          // console.log('los segundos que sobran son '+ tiempoSegundo);
          // console.log("el tiempo en minuto es "+ tiempoMinuto)
          // console.log(segundos);
-       
+       var trackId = element.id
         contenido+='<li class="cancion">'
         contenido+='<div class="cancion-play">'
         contenido+='<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
-        contenido+='<a href="/html/track.html">'+element.title_short +'</a>'
+        contenido+='<a href="/html/track.html?IdTrack='+trackId+'">'+element.title_short +'</a>'
         contenido+='</div> '
         contenido+='<div class="duracion">' + tiempoMinuto+':'+segundos + '</div>'+' '
         contenido+='<div class="agregar">'
@@ -88,9 +88,9 @@ window.onload = function(){
          // console.log(element.title);
          
  
-       
+       var IdAlbum = element.id
      
-       contenido += '<li class="album"><a href="/html/album.html">'
+       contenido += '<li class="album"><a href="/html/album.html?IdAlbum='+IdAlbum+'">'
        contenido += '<img src="'+element.cover_medium+'" alt="foto album">'
        contenido += '<h5>'+element.title+'</h5>'
        contenido += '<div class="play-circle"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></div>'
@@ -112,6 +112,8 @@ window.onload = function(){
  })
  .then(function(information) {
    console.log(information.name);
+
+   
    var nombreArtista = document.querySelector('.nombre-artista')
     var contenido = '<a href="#nombreArtista"><h1 id="nombreArtista">'+information.name+'</h1></a>'
     contenido += '<div class="numero-fans"> A '+information.nb_fan +' personas le gusta '+information.name

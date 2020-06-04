@@ -49,13 +49,13 @@ window.onload = function(){
          // console.log("el tiempo en minuto es "+ tiempoMinuto)
          // console.log(segundos);
          
-                 
+        var trackId = element.id
          
        
         contenido+='<li class="cancion">'
         contenido+='<div class="cancion-play">'
         contenido+='<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
-        contenido+='<a href="/html/track.html">'+element.title_short +'</a>'
+        contenido+='<a href="/html/track.html?IdTrack='+trackId+'">'+element.title_short +'</a>'
         contenido+='</div> '
         contenido+='<div class="duracion">' + tiempoMinuto+':'+segundos + '</div>'+' '
         contenido+='<div class="agregar">'
@@ -89,7 +89,7 @@ window.onload = function(){
  .then(function(information) {
    console.log(information);
 
-   var minutos = ''
+   
    var tiempoMinuto=''
 
    var duracion = information.duration;
@@ -101,7 +101,7 @@ window.onload = function(){
     tiempoMinuto = Math.ceil((duracion  - (tiempoHora * 3600))/60)
    }
    
-    
+   var minutos = ''
 
          if(tiempoMinuto <10 ){
            minutos ='0'+tiempoMinuto
@@ -110,7 +110,7 @@ window.onload = function(){
            minutos = tiempoMinuto
          }
          
-
+var IdArtist = information.artist.id
 var contenedorInformacion = document.querySelector('.nombre-imagen')
 var contenido = '<div class="foto-album"> '
 contenido += '<img src="'+information.cover_big+'" alt="">'
@@ -118,7 +118,7 @@ contenido += '</div>'
 contenido += '<div id="nombreAlbum" class="nombre-album"> <a class="linkAlbum" href="#nombreAlbum">' + information.title +'</a> '
 contenido += ' </div>'
 contenido += ' <div class="artista-fechaLanzamiento">'
-contenido += ' <p><a href="/html/artista.html">'+information.artist.name+'</a>  '+ information.release_date+'</p>'
+contenido += ' <p><a href="/html/artista.html?IdArtista='+IdArtist+'">'+information.artist.name+'</a>  '+ information.release_date+'</p>'
 contenido += ' <p>Duracion: '+tiempoHora+' hs '+tiempoMinuto+' min</p>'
 contenido += '</div> '
          

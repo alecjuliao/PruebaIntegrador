@@ -14,13 +14,17 @@ var trackId = queryStringOBJ.get('IdTrack')
     })
     .then(function(information) {
       console.log(information);
-   
+       
+      var IdArtista = information.artist.id
+      var IdAlbum = information.album.id
+
+
         var nombreCancion = information.title
         var nombreArtista = information.artist.name;
         var titulo = document.querySelector('h1')
         var contenidoTitulo = ''
   
-        // 
+     
 
       contenidoTitulo += '<a href="../html/track.html">'+nombreCancion+'</a>'
         titulo.innerHTML = contenidoTitulo
@@ -60,9 +64,9 @@ var trackId = queryStringOBJ.get('IdTrack')
           var contenedorArtista = document.querySelector('.parte-artista')
                   
           var contenidoAlbum = '<div class="titulo">'
-          contenidoAlbum += '<a href="/html/album.html"><h4 class="tituloEnlace">'+nombreAlbum+'</h4></a>'
+          contenidoAlbum += '<a href="/html/album.html?IdAlbum='+IdAlbum+'"><h4 class="tituloEnlace">'+nombreAlbum+'</h4></a>'
           contenidoAlbum += '</div>'
-          contenidoAlbum += '<a href="/html/album.html"><div class="foto-album">'
+          contenidoAlbum += '<a href="/html/album.html?IdAlbum='+IdAlbum+'"><div class="foto-album">'
           contenidoAlbum += '<img src="'+imagenAlbum+'" alt="foto-album">'
           contenidoAlbum += '</div></a>'
       
@@ -70,9 +74,9 @@ var trackId = queryStringOBJ.get('IdTrack')
   
   
         var contenidoArtista = '<div class="titulo">'
-        contenidoArtista+= '<a  href="/html/artista.html"><h4 class="tituloEnlace">'+nombreArtista+'</h4></a>'
+        contenidoArtista+= '<a  href="/html/artista.html?IdArtista='+IdArtista+'"><h4 class="tituloEnlace">'+nombreArtista+'</h4></a>'
         contenidoArtista+= '</div>'
-        contenidoArtista+= '<a href="/html/artista.html"><div class="foto-artista">'
+        contenidoArtista+= '<a href="/html/artista.html?IdArtista='+IdArtista+'"><div class="foto-artista">'
         contenidoArtista+= '<img src="'+imagenArtista+'" alt="foto-artista">'
         contenidoArtista+= '</div></a>'
   
