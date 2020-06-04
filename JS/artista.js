@@ -1,9 +1,14 @@
 window.onload = function(){
 
   console.log("funciona");
+  console.log(location.search)
+
+  var queryString = location.search 
+  var queryStringOBJ = new this.URLSearchParams(queryString)
+  var idArtista = queryStringOBJ.get('IdArtista')
  
  
-  var idArtista = 7626764
+  // var idArtista = 7626764
   // var idArtista = 632926
   
   

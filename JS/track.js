@@ -2,6 +2,11 @@ window.onload =function(){
 
   console.log('funciona');
    var trackId = 904224282
+   console.log(location.search)
+
+var queryString = location.search 
+var queryStringOBJ = new this.URLSearchParams(queryString)
+var trackId = queryStringOBJ.get('IdTrack')
   
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackId)
     .then(function(response) {

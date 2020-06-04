@@ -1,12 +1,15 @@
 window.onload = function(){
 
   console.log("funciona");
+  console.log(location.search)
+
+  var queryString = location.search 
+  var queryStringOBJ = new this.URLSearchParams(queryString)
+  var idAlbum = queryStringOBJ.get('IdAlbum')
  
  
   // var idAlbum = 60067052
-  var idAlbum = 136522252
-
-
+  // var idAlbum = 136522252
   // var idAlbum = 145596282
   
  
