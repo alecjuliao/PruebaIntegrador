@@ -86,7 +86,27 @@ window.onload = function(){
  .then(function(information) {
    console.log(information);
 
+   var minutos = ''
+   var tiempoMinuto=''
 
+   var duracion = information.duration;
+   var tiempoAlbum = duracion / 3600
+   var tiempoHora= Math.floor(tiempoAlbum) ;
+   if (tiempoHora < 1){
+     tiempoMinuto= Math.ceil(duracion / 60) 
+   }else{
+    tiempoMinuto = Math.ceil((duracion  - (tiempoHora * 3600))/60)
+   }
+   
+    
+
+         if(tiempoMinuto <10 ){
+           minutos ='0'+tiempoMinuto
+
+         }else {
+           minutos = tiempoMinuto
+         }
+         
 
 var contenedorInformacion = document.querySelector('.nombre-imagen')
 var contenido = '<div class="foto-album"> '
@@ -96,6 +116,7 @@ contenido += '<div id="nombreAlbum" class="nombre-album"> <a class="linkAlbum" h
 contenido += ' </div>'
 contenido += ' <div class="artista-fechaLanzamiento">'
 contenido += ' <p><a href="/html/artista.html">'+information.artist.name+'</a>  '+ information.release_date+'</p>'
+contenido += ' <p>Duracion: '+tiempoHora+' hs '+tiempoMinuto+' min</p>'
 contenido += '</div> '
          
 
