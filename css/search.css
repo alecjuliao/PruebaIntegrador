@@ -211,3 +211,20 @@ margin-bottom: 5%;
 .informacion-album .informacion :hover a{
   text-decoration: underline;
 }
+
+
+/* SIN RESULTADO */
+
+#informacion-sin-resultado{  
+width: fit-content;
+list-style:none;
+margin: auto;
+
+
+}
+
+.sin-resultado{
+width: 100%;
+color: white;
+font-size: large;
+}
