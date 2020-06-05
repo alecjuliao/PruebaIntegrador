@@ -19,6 +19,7 @@ body{
   margin: auto;
   padding: 1%;
   /* margin-top: 5%; */
+  
 }
 .resultado-artistas{
   display: flex;
@@ -36,6 +37,7 @@ body{
   margin: auto;
   list-style: none;
   margin-top: 2%;
+  
   
   
 
@@ -60,7 +62,7 @@ body{
   color: white;
   margin: auto;
   width: fit-content;
-  font-size: medium;
+  font-size: x-small;
   
 }
 .imagen-artista{
@@ -112,13 +114,13 @@ body{
 }
 .informacion-track .informacion h2{
   width: fit-content;
-  margin: auto;
-  margin-top: 8%;
+  
+  /* margin-top: 8%; */
 }
 .informacion-track .informacion h5{
   width: fit-content;
   margin: auto;
-  margin-top: 14%;
+  /* margin-top: 14%; */
 }
 
 /* ALBUMES */
