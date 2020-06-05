@@ -25,13 +25,13 @@ var contenido =''
     const element = information.data[i];
     console.log(element)
     // element.id
-
+    var IdArtist = element.id
     contenido +='<li class="informacion-artista">'
     contenido +='<div class="imagen-artista">'
-    contenido +='<img src="'+element.picture_medium+'" alt="">'
+    contenido +='<a href="/html/artista.html?IdArtista='+IdArtist+'"class="link-imagen-artista"><img src="'+element.picture_medium+'" alt=""></a>'
     contenido +='</div>'
     contenido +='<div class="nombre-artista">'
-    contenido +='<h2><a href="">'+element.name+'</a></h2>'
+    contenido +='<h2><a href="/html/artista.html?IdArtista='+IdArtist+'">'+element.name+'</a></h2>'
     // contenido +='<p>Fans: '+element.nb_fan+'</p>'
     contenido +='</div>'
     contenido +='</li>'
@@ -68,16 +68,17 @@ var contenido =''
   for (let i = 0; i < 4; i++) {
     const element = information.data[i];
     console.log(element)
-  
-  
+  var trackId = element.id
+  var IdArtist = element.artist.id
+  var IdAlbum = element.album.id
     contenido += '<li class="informacion-track">'
-    // contenido += '<div class="imagen-artista">'
-    // contenido += '<img src="'+element.artist.picture_medium+'" alt="">'
-    // contenido += '</div>'
+    contenido += '<div class="imagen-artista">'
+    contenido += '<a class="link-imagen-track" href="/html/track.html?IdTrack='+trackId+'"><img src="'+element.artist.picture_medium+'" alt=""></a>'
+    contenido += '</div>'
     contenido += '<div class="informacion">'
-    contenido += '<h2><a href="">'+element.title+'</a></h2>'
-    contenido += '<h5>Artista: <a href="">'+element.artist.name+'</a></h5>'
-    // contenido += '<h5>Album: <a href="">'+element.album.title+'</a></h5>'
+    contenido += '<h2><a href="/html/track.html?IdTrack='+trackId+'">'+element.title+'</a></h2>'
+    contenido += '<p class="titulo-artista">Artista: <a href="/html/artista.html?IdArtista='+IdArtist+'">'+element.artist.name+'</a></p><br><br>'
+    contenido += '<p class="titulo-album">Album: <a href="/html/album.html?IdAlbum='+IdAlbum+'">'+element.album.title+'</a></p>'
     contenido += '</div>'
     contenido += '</li>'
 
@@ -115,15 +116,16 @@ var contenido =''
     const element = information.data[i];
     console.log(element)
       
-    // element.id
+   var IdAlbum = element.id
+   var IdArtist = element.artist.id
   
     contenido += '<li class="informacion-album">'
     contenido += '<div class="imagen-album">'
-    contenido += '<img src="'+element.cover_medium+'" alt="">'
+    contenido += '<a href="/html/album.html?IdAlbum='+IdAlbum+'" class="link-imagen-album"><img src="'+element.cover_medium+'" alt=""></a>'
     contenido += '</div>'
     contenido += '<div class="informacion">'
-    contenido += '<h2><a href="">'+element.title+'</a></h2>'
-    contenido += '<h5><a href=""></a>'+element.artist.name+'</h5>'
+    contenido += '<h2><a href="/html/album.html?IdAlbum='+IdAlbum+'">'+element.title+'</a></h2>'
+    contenido += '<h5><a href="/html/artista.html?IdArtista='+IdArtist+'">'+element.artist.name+'</a></h5>'
     contenido += '</div>'
     contenido += '</li>'
 
