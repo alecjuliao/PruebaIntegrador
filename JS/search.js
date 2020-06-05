@@ -20,7 +20,28 @@ window.onload = function(){
    
 var contenedorArtista = document.querySelector('.resultado-artistas')
 var contenido =''
- 
+ if (information.data.length == 0) {
+   document.querySelector('.resultado-artistas').innerHTML += '<li class="informacion-artista"><p class="sin-resultado">Lo sentimos, no encontramos resultados</p></li>'
+ } else {
+  for (let i = 0; i < 4 && i< information.data.length; i++) {
+    const element = information.data[i];
+    console.log(element)
+    // element.id
+    var IdArtist = element.id
+    contenido +='<li class="informacion-artista">'
+    contenido +='<div class="imagen-artista">'
+    contenido +='<a href="artista.html?IdArtista='+IdArtist+'"class="link-imagen-artista"><img src="'+element.picture_medium+'" alt=""></a>'
+    contenido +='</div>'
+    contenido +='<div class="nombre-artista">'
+    contenido +='<h2><a href="artista.html?IdArtista='+IdArtist+'">'+element.name+'</a></h2>'
+    // contenido +='<p>Fans: '+element.nb_fan+'</p>'
+    contenido +='</div>'
+    contenido +='</li>'
+
+
+  }
+  contenedorArtista.innerHTML = contenido
+ }
   for (let i = 0; i < 4 && i< information.data.length; i++) {
     const element = information.data[i];
     console.log(element)
