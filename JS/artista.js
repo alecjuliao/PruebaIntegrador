@@ -52,7 +52,7 @@ window.onload = function(){
         contenido+='<li class="cancion">'
         contenido+='<div class="cancion-play">'
         contenido+='<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
-        contenido+='<a href="/html/track.html?IdTrack='+trackId+'">'+element.title_short +'</a>'
+        contenido+='<a href="track.html?IdTrack='+trackId+'">'+element.title_short +'</a>'
         contenido+='</div> '
         contenido+='<div class="duracion">' + tiempoMinuto+':'+segundos + '</div>'+' '
         contenido+='<div class="agregar">'
@@ -90,7 +90,7 @@ window.onload = function(){
  
        var IdAlbum = element.id
      
-       contenido += '<li class="album"><a href="/html/album.html?IdAlbum='+IdAlbum+'">'
+       contenido += '<li class="album"><a href="album.html?IdAlbum='+IdAlbum+'">'
        contenido += '<img src="'+element.cover_medium+'" alt="foto album">'
        contenido += '<h5>'+element.title+'</h5>'
        contenido += '<div class="play-circle"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></div>'
