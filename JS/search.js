@@ -9,7 +9,7 @@ window.onload = function(){
 
 
 
-  // ESTE ES EL FECH DE ARTISTAS. TRAE LOS 4 PRIMEROS
+  // ESTE ES EL FECH DE ARTISTAS. TRAE LOS 4 u 8 (a definir) PRIMEROS
   
   fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/artist?q='+busqueda)
   .then(function(response) {
@@ -48,7 +48,7 @@ var contenido =''
 
 
 
-// ESTE ES EL FECH DE TRACKS. TRAE LOS 4 PRIMEROS
+// ESTE ES EL FECH DE TRACKS. TRAE LOS 4u 8 (a definir) PRIMEROS
   fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/track?q='+busqueda)
   .then(function(response) {
     return response.json()
@@ -71,9 +71,9 @@ var contenido =''
   
   
     contenido += '<li class="informacion-track">'
-    contenido += '<div class="imagen-artista">'
-    contenido += '<img src="'+element.artist.picture_medium+'" alt="">'
-    contenido += '</div>'
+    // contenido += '<div class="imagen-artista">'
+    // contenido += '<img src="'+element.artist.picture_medium+'" alt="">'
+    // contenido += '</div>'
     contenido += '<div class="informacion">'
     contenido += '<h2><a href="">'+element.title+'</a></h2>'
     contenido += '<h5>Artista: <a href="">'+element.artist.name+'</a></h5>'
@@ -94,7 +94,7 @@ var contenido =''
 
 
 
-    // ESTE ES EL FECH DE ALBUMES. TRAE LOS 4 PRIMEROS
+    // ESTE ES EL FECH DE ALBUMES. TRAE LOS 4 u 8 (a definir) PRIMEROS
   fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/search/album?q='+busqueda)
   .then(function(response) {
     return response.json()

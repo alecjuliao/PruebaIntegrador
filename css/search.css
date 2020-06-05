@@ -15,7 +15,7 @@ body{
 }
 .artistas-search{
   background-color: rgba(30, 30, 30, 0.4);
-  width: 80%;
+  width: 50%;
   margin: auto;
   padding: 1%;
   /* margin-top: 5%; */
@@ -78,7 +78,7 @@ body{
 /* tracks */
 .tracks-search{
   background-color: rgba(30, 30, 30, 0.4);
-  width: 80%;
+  width: 50%;
   margin: auto;
   padding: 1%;
   /* margin-top: 5%; */
@@ -109,7 +109,7 @@ body{
 }
 
 .informacion-track .informacion{
-  width: fit-content;
+  width: 59%;
   margin: auto;
 }
 .informacion-track .informacion h2{
@@ -126,7 +126,7 @@ body{
 /* ALBUMES */
 .albumes-search{
   background-color: rgba(30, 30, 30, 0.4);
-  width: 80%;
+  width: 50%;
   margin: auto;
   padding: 1%;
   /* margin-top: 5%; */
