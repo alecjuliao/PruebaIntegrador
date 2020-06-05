@@ -20,11 +20,7 @@ window.onload = function(){
       var contenido = ' '
           for (let i = 0; i <  information.data.length ; i++) {
             const element = information.data[i];
-            // console.log(element);
-            // console.log(element.cover_medium);
-            // console.log(element.title);
-            // console.log(element.artist.name);
-      
+       
             var IdAlbum = element.id
             var IdArtista = element.artist.id
           
@@ -40,14 +36,11 @@ window.onload = function(){
             contenido +='</li> '
       
        contenedorAlbumes.innerHTML = contenido;
-      
-  
       }
       })
   
   .catch(function(error) {
     console.log("el error es el siguiente: " + error);
-  
   
   })
   
@@ -64,16 +57,8 @@ window.onload = function(){
       var contenido = ' '
           for (let i = 0; i <  information.data.length; i++) {
             const element = information.data[i];
-            // console.log(element);
-      //       // console.log(element.picture_medium);
-      //       // console.log(element.name);
-            
-      
-      
+
       var idArtista = element.id    
-  
-  
-  
           
             contenido +='<li>'
             contenido +='<a href="artista.html?IdArtista='+idArtista+'">'
@@ -83,9 +68,6 @@ window.onload = function(){
             // CIRCLE EN HOME
             contenido +='</a> '
             contenido +='</li> '
-      
-       
-      
   
       }
       contenedorAlbumes.innerHTML = contenido;
@@ -109,13 +91,6 @@ window.onload = function(){
       var contenido = ' '
           for (let i = 0; i <  information.data.length; i++) {
             const element = information.data[i];
-            // console.log(element);
-      //       // console.log(element.album.cover_medium);
-                //console.log(element.title)
-      //       // console.log(element.artist.name);
-                  
-            
-  
       var IdTrack = element.id
       var idArtista = element.artist.id
   
