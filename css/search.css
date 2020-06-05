@@ -1,0 +1,174 @@
+body{
+  margin: 0;
+  background-color: rgb(54, 51, 51);
+  background-color: rgb(20, 38, 41);
+  background-color: rgb(9, 17, 19);
+}
+
+.titulo-descriptor{
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 1%;
+  color: rgba(199, 226, 226);
+  margin-top: 5%;
+  font-size: xx-large;
+}
+.artistas-search{
+  background-color: rgba(30, 30, 30, 0.4);
+  width: 80%;
+  margin: auto;
+  padding: 1%;
+  /* margin-top: 5%; */
+}
+.resultado-artistas{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  
+  
+
+
+}
+
+.informacion-artista{
+  width: 25%;
+  margin: auto;
+  list-style: none;
+  margin-top: 2%;
+  
+  
+
+
+}
+
+.informacion-artista a{
+  text-decoration: none;
+  color: white;
+}
+.informacion-artista p{
+  width: fit-content;
+  margin: auto;
+  margin-top: 4%;
+}
+.informacion-artista h2{
+  width: fit-content;
+  margin: auto;
+  margin-top: 4%;
+}
+.nombre-artista{
+  color: white;
+  margin: auto;
+  width: fit-content;
+  font-size: medium;
+  
+}
+.imagen-artista{
+  width: 80%;
+  margin:auto;
+}
+.imagen-artista img{
+  border-radius: 100%;
+  width: 100%;
+}
+
+
+/* tracks */
+.tracks-search{
+  background-color: rgba(30, 30, 30, 0.4);
+  width: 80%;
+  margin: auto;
+  padding: 1%;
+  /* margin-top: 5%; */
+  
+}
+.resultado-tracks{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  
+  
+
+
+}
+
+.informacion-track{
+  width: 25%;
+  margin: auto;
+  list-style: none;
+  margin-top: 2%;
+  color: white;
+
+}
+.informacion-track a{
+  color: white;
+  text-decoration: none;
+}
+
+.informacion-track .informacion{
+  width: fit-content;
+  margin: auto;
+}
+.informacion-track .informacion h2{
+  width: fit-content;
+  margin: auto;
+  margin-top: 8%;
+}
+.informacion-track .informacion h5{
+  width: fit-content;
+  margin: auto;
+  margin-top: 14%;
+}
+
+/* ALBUMES */
+.albumes-search{
+  background-color: rgba(30, 30, 30, 0.4);
+  width: 80%;
+  margin: auto;
+  padding: 1%;
+  /* margin-top: 5%; */
+  margin-bottom: 5%;
+  
+}
+.resultado-albumes{
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding: 0;
+  margin:auto;
+
+}
+
+.informacion-album{
+  width: 23%;
+  margin: auto;
+  list-style: none;
+  margin-top: 2%;
+  color: white;
+
+}
+.informacion-album a{
+  color: white;
+  text-decoration: none;
+}
+.informacion-album img{
+  width: 100%;
+}
+
+.informacion-album .informacion{
+  width: fit-content;
+  margin: auto;
+}
+.informacion-album .informacion h2{
+  width: fit-content;
+  margin: auto;
+  margin-top: 8%;
+  font-size: medium;
+}
+.informacion-album .informacion h5{
+  width: fit-content;
+  margin: auto;
+  margin-top: auto;
+  font-size: small;
+}

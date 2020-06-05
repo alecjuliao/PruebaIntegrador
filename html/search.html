@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="../css/search.css">
+  <link rel="stylesheet" href="../css/header.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <script src="../JS/search.js"></script>
+  <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+  <!-- HEADER -->
+  <div id="header" class="header-container">
+    <div class="logo">
+        <a href="/html/home.html"><img class="logoimg" src="../img/logo.png" alt="logo"></a>               
+    <div class="nombre">
+      <!-- <a href="home.html">M.A.M MUSIC</a>   -->
+      
+      
+  </div>
+</div>
+    
+    <div class="opciones">
+        <div class="header generos">
+         <a href="/html/generos.html">Generos</a> 
+        </div>
+        <div class="header artistas">
+            <a href="/html/home.html#exploraArtistas"> Artistas</a>
+        </div>
+        <div class="header podcast">
+            <a href="/html/podcast.html"> Podcasts</a>
+        </div>
+        <div class="header albumes">
+           <a href="/html/home.html#exploraAlbumes"> Albumes</a>
+       </div>
+       <div class="header tracks">
+           <a href="/html/home.html#exploraTracks"> Tracks</a>
+       </div>
+       
+       <div class="search">
+           <i class="fas fa-search fa-xs "></i> 
+           
+              <form action="search.html" method="GET" >
+                 <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
+
+              </form>
+       </div>
+
+    </div>   
+    <div class="mi-perfil">
+        <a href="/html/playlist.html"><i class="far fa-user-circle fa-2x"></i></a>
+        
+    </div>
+</div>  
+
+
+<main>
+  <h3 class="titulo-descriptor">Artistas</h3>
+  <div class="artistas-search">
+    <ul class="resultado-artistas">
+    
+    </ul>
+  </div>
+  <h3 class="titulo-descriptor">Tracks</h3>
+  <div class="tracks-search">
+    <ul class="resultado-tracks">
+     
+    </ul>
+  </div>
+  <h3 class="titulo-descriptor">Albumes</h3>
+  <div class="albumes-search">
+    <ul class="resultado-albumes">
+     
+    </ul>
+  </div>
+
+
+</main>
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="contenedor-nombres">
+       
+        <a href="https://www.instagram.com/alecjuliao/"  target="blank" class="nombres">Alec Juliao</a>
+        <a href="https://www.instagram.com/marcoshogg_/" target="blank" class="nombres">Marcos Hogg</a>
+       <a href="https://www.instagram.com/manupascua2" target="blank" class="nombres">Manuel Pascua</a>
+ 
+ </div>
+ 
+ 
+ 
+      <div class="logo-deezer">
+       <a href="https://www.deezer.com/es/"><img class="imgdeezer" src="../img/deezer-e1526709129795.png" alt=""></a>
+      </div>
+ 
+ </footer>
+</body>
+</html>

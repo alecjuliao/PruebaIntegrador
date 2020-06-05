@@ -71,15 +71,25 @@
     text-decoration: none;
 }
 
+form{
+    width: 85%;
+}
+.search{
+    display: flex;
+}
 .search i{
     color: rgba(199, 226, 226);
+    height: fit-content;
+    margin-right: auto;
+    margin-top: 5%;
 }
 .search input{
-    height: 85%;
-    width: 75%;
+    height: 90%;
+    width: 100%;
     background-color:  rgba(126, 124, 124,0.1);
     border-radius: 30px;
-    border: solid 2px rgba(199, 226, 226);;
+    border: solid 2px rgba(199, 226, 226);
+    color: white;
 }
 
 
