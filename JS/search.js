@@ -21,7 +21,7 @@ window.onload = function(){
 var contenedorArtista = document.querySelector('.resultado-artistas')
 var contenido =''
  
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4 && i< information.data.length; i++) {
     const element = information.data[i];
     console.log(element)
     // element.id
@@ -65,7 +65,7 @@ var contenido =''
 var contenedorTrack = document.querySelector('.resultado-tracks')
 var contenido =''
  
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4 && i< information.data.length; i++) {
     const element = information.data[i];
     console.log(element)
   var trackId = element.id
@@ -73,12 +73,12 @@ var contenido =''
   var IdAlbum = element.album.id
     contenido += '<li class="informacion-track">'
     contenido += '<div class="imagen-artista">'
-    contenido += '<a class="link-imagen-track" href="/html/track.html?IdTrack='+trackId+'"><img src="'+element.artist.picture_medium+'" alt=""></a>'
+    contenido += '<a class="link-imagen-track" href="/html/album.html?IdAlbum='+IdAlbum+'"><img src="'+element.album.cover_medium+'" alt=""></a>'
     contenido += '</div>'
     contenido += '<div class="informacion">'
     contenido += '<h2><a href="/html/track.html?IdTrack='+trackId+'">'+element.title+'</a></h2>'
     contenido += '<p class="titulo-artista">Artista: <a href="/html/artista.html?IdArtista='+IdArtist+'">'+element.artist.name+'</a></p><br><br>'
-    contenido += '<p class="titulo-album">Album: <a href="/html/album.html?IdAlbum='+IdAlbum+'">'+element.album.title+'</a></p>'
+    // contenido += '<p class="titulo-album">Album: <a href="/html/album.html?IdAlbum='+IdAlbum+'">'+element.album.title+'</a></p>'
     contenido += '</div>'
     contenido += '</li>'
 
@@ -112,7 +112,7 @@ var contenido =''
 var contenedorAlbum = document.querySelector('.resultado-albumes')
 var contenido =''
  
-  for (let i = 0; i < 4; i++) {
+  for (let i = 0; i < 4 && i< information.data.length; i++) {
     const element = information.data[i];
     console.log(element)
       
