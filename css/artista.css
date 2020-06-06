@@ -4,16 +4,17 @@ body{
   background-color: rgb(20, 38, 41);
   background-color: rgb(9, 17, 19);
 }
+
 .container{
   width: 100%;
   background-color: rgb(9, 17, 19);
 }
 
-/* main .main-artista{
+main{
   width: 90%;
   margin:0  auto;
-} */
-* .main-artista 
+}
+*.main-artista
 
 .nombre-imagen{
 display: flex;
