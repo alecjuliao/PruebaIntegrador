@@ -72,55 +72,73 @@ a la pagina de detalle correspondiente. Por ahora, no me sale. -->
 
 
 <!-- ALBUM -->
-<div class="container-contenido-album">
+<main class="main-album">
+  <div class="nombre-imagen">
+               <div class="foto-album">
+                     
+               </div>
+               <div class="nombre-album">
+                   
+
+               </div>
+               <div class="artista-fechaLanzamiento">
+                 <!-- insertar con JS -->
+               </div>
+     </div>
+
+
+
+
      
-  <!-- SECCION CANCIONES -->
-  <div class="top-canciones">
-        <!-- <div class="topcanciones-titulo">
+<div class="container-contenido-album">
 
-          <h3 class="canciones-mas-escuchadas">Disfruta del album!</h3>
-          
-        </div> -->
+ <!-- SECCION CANCIONES -->
+ <div class="top-canciones">
+       <!-- <div class="topcanciones-titulo">
+
+         <h3 class="canciones-mas-escuchadas">Disfruta del album!</h3>
+         
+       </div> -->
 
 
-      <ul class="lista-canciones">
-        <!-- <li class="canciones"><a href="#"><p>titulo del tema + nombre del artista + signo play con fa fa</p></a></li> -->
-        <li class="cancion">
-            <div class="cancion-play">
-                <i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
-                <a href="#"></a>
-            </div> 
-            <div class="duracion">
-              
-            </div>
-            <div class="agregar">
+     <ul class="lista-canciones">
+       <!-- <li class="canciones"><a href="#"><p>titulo del tema + nombre del artista + signo play con fa fa</p></a></li> -->
+       <li class="cancion">
+           <div class="cancion-play">
+               <i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>
+               <a href="#"></a>
+           </div> 
+           <div class="duracion">
              
            </div>
-        </li>
-          
-        <!-- <div class="play-circle"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></div> -->
-        
-      </ul>
-
-
-
-
+           <div class="agregar">
+            
+          </div>
+       </li>
+         
+       <!-- <div class="play-circle"><i class="fa fa-play-circle-o fa-3x" aria-hidden="true"></i></div> -->
        
-      </div>
-        
-
- 
-  <!-- SECCION ALBUMES -->
-  <!-- <div class="top-albumes">
-    <div class="topalbumes-titulo"><h3>Los albumes del artista</h3></div>
+     </ul>
 
 
-    <ul class="lista-albumes">
-     
+
+
       
+     </div>
+       
 
-    </ul>
-  </div> -->
+
+ <!-- SECCION ALBUMES -->
+ <!-- <div class="top-albumes">
+   <div class="topalbumes-titulo"><h3>Los albumes del artista</h3></div>
+
+
+   <ul class="lista-albumes">
+    
+     
+
+   </ul>
+ </div> -->
 </div>
 
 
@@ -129,13 +147,10 @@ a la pagina de detalle correspondiente. Por ahora, no me sale. -->
 
 
 </div>
-
-
-
-
+</main>
 <!-- ARTISTA -->
 
-<main>
+<main class="main-artista">
   <div class="nombre-imagen">
                <div class="foto-artista">
                      
@@ -200,8 +215,10 @@ a la pagina de detalle correspondiente. Por ahora, no me sale. -->
 
 
 </main>
+
+
 <!-- TRACK -->
-<main>
+<main class="main-track">
 
         
   <div id="titulo-cancion"class="titulo-cancion">
@@ -235,8 +252,8 @@ a la pagina de detalle correspondiente. Por ahora, no me sale. -->
 
 
 
-<!-- PODCAST -->
-<main>
+<!-- PODCAST(detalle)-->
+<main class="main-podcast">
   <div class="banner">
         <img src="/img/podcasts/6501552013068_XXL.jpg" alt="">
   </div>
@@ -290,7 +307,30 @@ a la pagina de detalle correspondiente. Por ahora, no me sale. -->
 
 </main>
 
+<!-- SEARCH -->
+<main class="main-search">
+  <h3 class="titulo-descriptor">Artistas</h3>
+  <div class="artistas-search">
+    <ul class="resultado-artistas">
+      <!-- <li class="informacion-artista"><p class="sin-resultado">Lo sentimos, no encontramos resultados</p></li> -->
+    
+    </ul>
+  </div>
+  <h3 class="titulo-descriptor">Tracks</h3>
+  <div class="tracks-search">
+    <ul class="resultado-tracks">
+     
+    </ul>
+  </div>
+  <h3 class="titulo-descriptor">Albumes</h3>
+  <div class="albumes-search">
+    <ul class="resultado-albumes">
+     
+    </ul>
+  </div>
 
+
+</main>
 
 <!-- FOOTER -->
 

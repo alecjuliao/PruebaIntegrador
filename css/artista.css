@@ -9,10 +9,11 @@ body{
   background-color: rgb(9, 17, 19);
 }
 
-main{
+/* main .main-artista{
   width: 90%;
   margin:0  auto;
-}
+} */
+* .main-artista 
 
 .nombre-imagen{
 display: flex;
@@ -102,7 +103,8 @@ margin: 0;
 /* SECCION CONTENIDO */
 .container-contenido-artista{
 display: flex;
-width: 100%;
+width: 90%;
+margin: auto;
 justify-content: space-between;
 padding: 10px;
 box-sizing: border-box;
@@ -111,6 +113,7 @@ background-color: rgb(43, 44, 43,0.4);
 border-top-right-radius: 2rem;
 border-top-left-radius: 2rem;
 margin-bottom: 5%;
+
 }
 
 

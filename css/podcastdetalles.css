@@ -3,11 +3,11 @@
     width: 100%;
   }
   
-  main{
+  main .main-podcast{
     width: 90%;
     margin:0  auto;
   }
-  
+  * .main-podcast
   /* SECCION BANNER + TITULO */
   .banner{
     width: 40%;
