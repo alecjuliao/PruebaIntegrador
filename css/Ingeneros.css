@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(9, 17, 19) ;
+    background-color:rgb(36, 35, 35) ;
 }
 div.container{
     display: flex;
@@ -40,7 +40,6 @@ h1.titulo{
     
 }
 .contenido .artistas img{/*me quedaron las img obaladas*/
-    border-radius: 100px;
-    width: 70%;
-
+    border-radius: 100%;
+    width: 40%;
 }
