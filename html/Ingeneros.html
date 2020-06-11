@@ -4,70 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="inGeneros.css">
+    <link rel="stylesheet" href="../css/Ingeneros.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="https://kit.fontawesome.com/a0c0bb4f74.js" crossorigin="anonymous"></script>
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
-    <header class="main-header">
-        <div class="header-container">
-            <div class="logo">
-                <a href="home.html"><img class="logoimg" src="img/logo.png" alt="logo"></a>               
+    <div id="header" class="header-container">
+        <div class="logo">
+            <a href="home.html"><img class="logoimg" src="../img/logo.png" alt="logo"></a>               
+        <div class="nombre">
+          <!-- <a href="home.html">M.A.M MUSIC</a>   -->
+          
+          
+      </div>
+    </div>
+        
+        <div class="opciones">
+            <div class="header generos">
+             <a href="generos.html">Generos</a> 
             </div>
-            <div class="opciones">
-                <div>
-                 <a href="generon.html"></a>Generos  
-                </div>
-                <div>
-                    <a href="artistas.html"></a>Artistas  
-                </div>
-                <div>
-                    <a href="podcasts.html"></a>Posdcasts
-                </div>
-                <div>                   
-                    <input type="text" id="searchstring" name="search" placeholder="Search.." oninput="filterSearch()">
-                </div>
+            <div class="header artistas">
+                <a href="home.html#exploraArtistas"> Artistas</a>
+            </div>
+            <div class="header podcast">
+                <a href="podcast.html"> Podcasts</a>
+            </div>
+            <div class="header albumes">
+               <a href="home.html#exploraAlbumes"> Albumes</a>
+           </div>
+           <div class="header tracks">
+               <a href="home.html#exploraTracks"> Tracks</a>
+           </div>
+           
+           <div class="search">
+            <i class="fas fa-search fa-xs "></i> 
+            
+               <form action="search.html" method="GET" >
+                  <input type="text" id="searchstring" name="search" placeholder="Artistas, tracks y mas..." oninput="filterSearch()">
 
-            </div>   
-            <div class="mi-perfil">
-                <a href="about.html"><i class="far fa-user-circle"></i></a>
-                
-            </div>
+               </form>
+        </div>
+
         </div>   
-    </header>
+        <div class="mi-perfil">
+            <a href="playlist.html"><i class="far fa-user-circle fa-2x"></i></a>
+            
+        </div>
+    </div>  
+            </header>
     
     <section>
         <div class="container">
             <h1 class="titulo">nombre del genero</h1>
             <ul class="contenido">
                 <li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li>
                 <li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li>
                 <li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li>
                 <li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li>
                 <li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li>
                 <li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li>
                 <li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li><li class="artistas">
-                    <img src="../carpeta sin título/img/queen.jpg" alt="foto" class="artistas-img">
+                    <img src="../img/Artistas/ed-sheeran.jpg" alt="foto" class="artistas-img">
                     <h3 class="nombreArtista">queen</h3>
                 </li>           
 
@@ -85,7 +106,7 @@
      
         </div>    
         <div class="logo-deezer">
-           <a href="https://www.deezer.com/es/"><img class="imgdeezer" src="/img/deezer-e1526709129795.png" alt=""></a>
+           <a href="https://www.deezer.com/es/"><img class="imgdeezer" src="../img/deezer-e1526709129795.png" alt=""></a>
         </div>
      
      </footer>

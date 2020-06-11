@@ -1,6 +1,9 @@
 *{
     box-sizing: border-box;
 }
+body{
+    background-color:rgb(9, 17, 19) ;
+}
 div.container{
     display: flex;
     flex-direction: column;
@@ -37,6 +40,7 @@ h1.titulo{
     
 }
 .contenido .artistas img{/*me quedaron las img obaladas*/
-    border-radius: 100%;
-    width: 40%;
+    border-radius: 100px;
+    width: 70%;
+
 }
