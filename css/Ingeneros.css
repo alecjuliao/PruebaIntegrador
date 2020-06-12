@@ -62,3 +62,17 @@ h1.titulo{
     width:100%
 }
 /*rgba(199, 226, 226) color del h3*/
+@media (max-width:460px){
+    .contenido{
+        border-radius: 50px;
+
+    }
+    .contenido .artistas{
+        width: 33%;
+
+    }
+    .contenido .artistas h3{
+        font-size: small;
+    }
+
+}
