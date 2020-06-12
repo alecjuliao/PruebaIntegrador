@@ -7,7 +7,23 @@ window.onload = function(){
     //var queryStringOBJ=new this.URLSearchParams(queryString)
     //var IdArtist=queryStringOBJ.get('IdArtista')
 
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/116")
+    .then(function(response){
+        return response.json()
+    })
+    .then(function(information){
+        console.log(information)
+        document.querySelector(".titulo").innerHTML=information.name
 
+
+
+    })
+    .catch(function(error){
+        console.log("el error es: "+error);
+
+
+
+    })
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/116/artists")
     .then(function(response){
         return response.json()
@@ -47,6 +63,12 @@ window.onload = function(){
         contenedorArtistas.innerHTML=contenido
 
 
+
+
+
+    })
+    .catch(function(error){
+        console.log("el error es: "+error);
 
 
 
