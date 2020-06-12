@@ -2,7 +2,7 @@
     box-sizing: border-box;
 }
 body{
-    background-color:rgb(36, 35, 35) ;
+    background-color:rgb(9, 17, 19) ;
 }
 div.container{
     display: flex;
@@ -18,7 +18,7 @@ h1.titulo{
 
 .contenido{ /*este es el padre del contenido*/
     width: 90%;
-    background-color: rgb(36, 35, 35);
+    background-color: rgba(30, 30, 30, 0.4);
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -43,3 +43,4 @@ h1.titulo{
     border-radius: 100%;
     width: 40%;
 }
+/*rgba(199, 226, 226) color del h3*/
