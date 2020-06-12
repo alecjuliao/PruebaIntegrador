@@ -1,11 +1,11 @@
 
 
 window.onload = function(){
-    console.log(location.search)
-    var queryString=location.search
+    //console.log(location.search)
+    //var queryString=location.search
     
-    var queryStringOBJ=new this.URLSearchParams(queryString)
-    var IdArtist=queryStringOBJ.get('IdArtista')
+    //var queryStringOBJ=new this.URLSearchParams(queryString)
+    //var IdArtist=queryStringOBJ.get('IdArtista')
 
 
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/116/artists")
@@ -22,6 +22,7 @@ window.onload = function(){
             console.log(element)
             console.log(element.name)
             console.log(element.picture)
+            var IdArtist=element.id
 
             
             
