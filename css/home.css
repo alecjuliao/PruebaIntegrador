@@ -44,10 +44,31 @@ body{
 .volverMenu h4{
   width: fit-content;
   /* margin-top: auto; */
-  margin-left: 47%;
+  margin: auto;
   
 }
 .volver a{
+  margin:auto;
+}
+
+
+.volverMobile{
+  font-size: medium;
+  color: rgba(199, 226, 226);
+  text-decoration: none;
+  
+}
+.volverMenuMobile{
+  margin: auto;
+  height: fit-content;
+}
+.volverMenuMobile h4{
+  width: fit-content;
+  /* margin-top: auto; */
+  margin: auto;
+  
+}
+.volverMobile a{
   margin:auto;
 }
 
@@ -162,7 +183,9 @@ border-radius: 100%;
   display: none;
 }
 
-
+.volverMenuMobile{
+  display: none;
+}
 
 @media (max-width:460px){
 /* ARRANCA HEADER  */
@@ -342,9 +365,15 @@ main .tercera{
   margin-bottom: 5%;
 }
     
-
+.volver{
+  display: none;
+}
+.volverMenuMobile{
+  display: block;
+}
 
 /* TERMINA LISTATOP HOME MOBILE */
+
 
 
 
