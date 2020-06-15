@@ -89,6 +89,38 @@ var trackId = queryStringOBJ.get('IdTrack')
         console.log("Error: " + error);
       })
   
+
+
+
+
+
+  
+      var idCancionesPlaylist = [
+  
+      ];
+
+  
+  var boton = document.querySelector('#button')
+  
+  
+var idNuevaCancion =""
+
+  
+boton.onclick = function(){
+
+JSON.parse(localStorage.getItem("idCancionesPlaylist"))
+console.log(idCancionesPlaylist);
+
+  idNuevaCancion = JSON.stringify(idCancionesPlaylist.push(trackId))
+
+
+
+
+  
+  }// funcion boton.onclick
+
+
+  localStorage.setItem("idCancionesPlaylist",JSON.stringify(idNuevaCancion))
   
   
   
@@ -96,16 +128,4 @@ var trackId = queryStringOBJ.get('IdTrack')
   
   
   
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  }// cierra window.onload function
+  }// cierra window.onload
