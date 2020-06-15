@@ -61,6 +61,13 @@ h1.titulo{
     border-radius: 100%;
     width:100%
 }
+
+.contenido .artistas :hover img{
+    opacity: 0.3;
+}
+.contenido .artistas :hover h3{
+    text-decoration: underline;
+}
 /*rgba(199, 226, 226) color del h3*/
 @media (max-width:460px){
     .contenido{
