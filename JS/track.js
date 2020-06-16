@@ -94,38 +94,72 @@ var trackId = queryStringOBJ.get('IdTrack')
 
 
 
+ 
+//       var idCancionesPlaylist = [
   
-      var idCancionesPlaylist = [
+//       ];
+
+//       var arrayPlaylst = window.localStorage.getItem("idCancionesPlaylist")
+      var boton = document.querySelector('#button')
+//       var idNuevaCancion =""
+
+//       boton.onclick = function(){
+// if (arrayPlaylst === null) {
   
-      ];
+//   var idCancionesPlaylist = [
+  
+//   ];
+  
+//     var arrayNuevo = JSON.stringify(idCancionesPlaylist.push(trackId))
+//     window.localStorage.setItem("idCancionesPlaylist",JSON.stringify(arrayNuevo))
+
+      
+  
+// } else {
+  
+  
+//   var listaExistente = window.localStorage.getItem("idCancionesPlaylist")
+//   var nuevaLista = JSON.stringify(listaExistente.push(trackId))
+//   window.localStorage.setItem("idCancionesPlaylist",JSON.stringify(nuevaLista))
+// }
+   
+// }// funcion boton.onclick   
+
+
+
+
 
   
-  var boton = document.querySelector('#button')
   
   
-var idNuevaCancion =""
+//  console.log(localStorage)
+  
 
-  
+
+var boton = document.querySelector('#button')
+
+
+// var miObjeto = [];
+
+// localStorage.setItem('listaPlaylist', JSON.stringify(miObjeto));
+
 boton.onclick = function(){
 
-JSON.parse(localStorage.getItem("idCancionesPlaylist"))
-console.log(idCancionesPlaylist);
+  if (JSON.parse(localStorage.getItem('listaPlaylist')) === null) {
+    var nuevaLista = [trackId];
+    localStorage.setItem('listaPlaylist', JSON.stringify(nuevaLista));
 
-  idNuevaCancion = JSON.stringify(idCancionesPlaylist.push(trackId))
+  } else {
+    var miLista = JSON.parse(localStorage.getItem('listaPlaylist'))
+    miLista.push(trackId)
+    localStorage.setItem('listaPlaylist', JSON.stringify(miLista));
+
+  }
 
 
+}/// boton.onclick
+
+console.log(JSON.parse(localStorage.getItem('listaPlaylist')))
 
 
-  
-  }// funcion boton.onclick
-
-
-  localStorage.setItem("idCancionesPlaylist",JSON.stringify(idNuevaCancion))
-  
-  
-  
-  
-  
-  
-  
   }// cierra window.onload

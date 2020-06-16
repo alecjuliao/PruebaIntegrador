@@ -1,10 +1,17 @@
 window.onload = function(){
-  // JSON.parse(localStorage.getItem("idCancionesPlaylist"))
+  arrayIdsCanciones = JSON.parse(window.localStorage.getItem("listaPlaylist"))
 
-  console.log(JSON.parse(localStorage.getItem("idCancionesPlaylist")))
+  console.log(arrayIdsCanciones)
+
+
+ var eliminar = document.querySelector('#eliminar-de-playlist')
+
+ eliminar.onclick = function(){
 
 
 
+
+ }
 
 
 
