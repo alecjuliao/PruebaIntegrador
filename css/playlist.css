@@ -163,4 +163,31 @@ p{
   
   
   }
-  
+  .vacia{
+    background-color: rgba(30, 30, 30, 0.4);
+    width: 50%;
+    margin:auto;
+    padding: 1%;
+    box-sizing: border-box;
+    margin-bottom: 5%;
+  }
+
+  .vacia p{
+    width: fit-content;
+    margin: auto;
+    color:rgba(199, 226, 226);
+    margin-top: 10%;
+    margin-bottom: 20%;
+    font-size: x-large;
+  }
+
+  .vacia a{
+    text-decoration: none;
+    color:rgba(199, 226, 226);
+    width: fit-content;
+  }
+
+  .vacia h4{
+    width: fit-content;
+    margin: auto;
+  }

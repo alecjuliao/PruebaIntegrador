@@ -4,13 +4,10 @@ window.onload = function(){
   console.log(arrayIdsCanciones)
 
 
- var eliminar = document.querySelector('#eliminar-de-playlist')
-
- eliminar.onclick = function(){
-
-
-
-
+ if (arrayIdsCanciones == null || arrayIdsCanciones == "") {
+   document.querySelector('.vacia').innerHTML = '<p class="tituloVacia">Todavia no agregaste canciones a tu Playlist... <br><br><br> ¡Explora la pagina y armala con tu musica favorita!</p><br><h4><a href="home.html">Home<a/></h4>'
+ } else {
+   // hacer un for en el array creado (idcancionesplaylist) y agregar las canciones a la playlist
  }
 
 
@@ -18,6 +15,15 @@ window.onload = function(){
 
 
 
+////////// ELIMINAR CANCION DE PLAYLIST
+//  var eliminar = document.querySelector('#eliminar-de-playlist')
+
+//  eliminar.onclick = function(){
+
+
+
+
+//  }
 
 
 
@@ -26,6 +32,7 @@ window.onload = function(){
 
 
 
+}// no borrar. window.onload
 
 
 
@@ -34,11 +41,7 @@ window.onload = function(){
 //   var idCancionesPlaylist = [
   
 //   ];
-// // if (idCancionesPlaylist == null || idCancionesPlaylist == "") {
-// //   document.querySelector('.vacia').innerHTML = '<p class="tituloVacia">Todavia no agregaste canciones a tu Playlist... <br> Explora la pagina y arma tu Playlist!</p>'
-// // } else {
-// //   // hacer un for en el array creado (idcancionesplaylist) y agregar las canciones a la playlist
-// // }
+
 
 
 // JSON.parse(localStorage.getItem("idCancionesPlaylist"))
@@ -77,8 +80,3 @@ window.onload = function(){
   
 
 
-
-
-
-
-}// no borrar. window.onload
