@@ -8,7 +8,7 @@ window.onload = function(){
   
   
   
-  
+  document.querySelector('.contenedor-albumes').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
   //////// ALBUMES
   fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/albums')
   .then(function(response) {
@@ -44,7 +44,7 @@ window.onload = function(){
   
   })
   
-  
+  document.querySelector('.contenedor-artistas').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
   ///////////// Artistas
   
   fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/artists')
@@ -78,7 +78,7 @@ window.onload = function(){
     })
   
   
-  
+    document.querySelector('.contenedor-tracks').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
   ///////////// TRACKS
   
   fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/chart/0/tracks')

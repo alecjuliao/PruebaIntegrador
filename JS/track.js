@@ -8,6 +8,8 @@ var queryString = location.search
 var queryStringOBJ = new this.URLSearchParams(queryString)
 var trackId = queryStringOBJ.get('IdTrack')
   
+
+document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackId)
     .then(function(response) {
       return response.json()

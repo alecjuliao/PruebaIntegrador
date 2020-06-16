@@ -12,7 +12,7 @@ window.onload = function(){
   // var idArtista = 632926
   
   
- 
+  document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
   ////// TOP CANCIONES
    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+idArtista+'/top')
  .then(function(response) {
@@ -71,7 +71,7 @@ window.onload = function(){
  .catch(function(error) {
    console.log("Error: " + error);
  })
- 
+ document.querySelector('.lista-albumes').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
  ///////////// ALBUMES
  fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+idArtista+'/albums')
  .then(function(response) {
@@ -104,7 +104,8 @@ window.onload = function(){
  .catch(function(error) {
    console.log("Error: " + error);
  })
- 
+
+ document.querySelector('.nombre-artista').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
  /// NOMBRE ARTISTA
    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/artist/'+idArtista+'/')
  .then(function(response) {

@@ -24,6 +24,7 @@ window.onload = function(){
 
 
     })
+    document.querySelector(".contenido").innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
     fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/116/artists")
     .then(function(response){
         return response.json()

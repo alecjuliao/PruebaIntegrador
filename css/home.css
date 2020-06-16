@@ -5,7 +5,9 @@ body{
   background-color: rgb(9, 17, 19);
 }
 
-
+.contenedor-artistas img{
+  width: 10px;
+}
 .top-listas{
   padding: 50px;
   
