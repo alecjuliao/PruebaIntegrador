@@ -15,6 +15,10 @@ var tiempoMinuto =''
 var tiempoSegundo ='' 
 var segundos = ''
 var eliminar = ''
+
+
+
+
  if (arrayIdsCanciones == null || arrayIdsCanciones == "") {
    document.querySelector('.vacia').innerHTML = '<p class="tituloVacia">Todavia no agregaste canciones a tu Playlist... <br><br><br> ¡Explora la pagina y armala con tu musica favorita!</p><br><h4><a href="home.html">Home<a/></h4>'
  } else {
@@ -86,7 +90,10 @@ var eliminar = ''
    }// for NO BORRAR
 
    
-   
+   for (let i = 0; i < arrayIdsCanciones.length; i++) {
+     const element = arrayIdsCanciones[i];
+     
+   }
  }// no borrar!! IF ELSE
 
 
@@ -98,14 +105,14 @@ var eliminar = ''
 
 ////////// ELIMINAR CANCION DE PLAYLIST
 
-// var eliminar = document.querySelector('#eliminar-de-playlist')
+var eliminar = document.querySelector('#eliminar-de-playlist')
 
-  //  eliminar.onclick = function(){
+   eliminar.onclick = function(){
   
   
-  // console.log(this.trackId)
+  console.log()
   
-  //  }  
+   }  
            
 
 

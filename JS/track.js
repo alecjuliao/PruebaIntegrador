@@ -96,13 +96,51 @@ document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading
 
 
 
- 
+
+
+
+var boton = document.querySelector('#button')
+
+
+// var miObjeto = [];
+
+// localStorage.setItem('listaPlaylist', JSON.stringify(miObjeto));
+
+boton.onclick = function(){
+
+  if (JSON.parse(localStorage.getItem('listaPlaylist')) === null) {
+    var nuevaLista = [trackId];
+    localStorage.setItem('listaPlaylist', JSON.stringify(nuevaLista));
+
+  } else {
+    var miLista = JSON.parse(localStorage.getItem('listaPlaylist'))
+    miLista.push(trackId)
+    localStorage.setItem('listaPlaylist', JSON.stringify(miLista));
+
+  }
+
+
+}/// boton.onclick
+
+console.log(JSON.parse(localStorage.getItem('listaPlaylist')))
+
+
+  }// cierra window.onload
+
+
+
+
+
+
+
+  ////// INTENTO DE WEBSTORAGE
+   
 //       var idCancionesPlaylist = [
   
 //       ];
 
 //       var arrayPlaylst = window.localStorage.getItem("idCancionesPlaylist")
-      var boton = document.querySelector('#button')
+      // var boton = document.querySelector('#button')
 //       var idNuevaCancion =""
 
 //       boton.onclick = function(){
@@ -136,32 +174,3 @@ document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading
   
 //  console.log(localStorage)
   
-
-
-var boton = document.querySelector('#button')
-
-
-// var miObjeto = [];
-
-// localStorage.setItem('listaPlaylist', JSON.stringify(miObjeto));
-
-boton.onclick = function(){
-
-  if (JSON.parse(localStorage.getItem('listaPlaylist')) === null) {
-    var nuevaLista = [trackId];
-    localStorage.setItem('listaPlaylist', JSON.stringify(nuevaLista));
-
-  } else {
-    var miLista = JSON.parse(localStorage.getItem('listaPlaylist'))
-    miLista.push(trackId)
-    localStorage.setItem('listaPlaylist', JSON.stringify(miLista));
-
-  }
-
-
-}/// boton.onclick
-
-console.log(JSON.parse(localStorage.getItem('listaPlaylist')))
-
-
-  }// cierra window.onload
