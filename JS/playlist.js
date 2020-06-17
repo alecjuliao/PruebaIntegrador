@@ -3,6 +3,28 @@ window.onload = function(){
 
   console.log(arrayIdsCanciones)
 
+
+
+  
+// if (JSON.parse(window.localStorage.getItem("nombrePlaylist")=== null)) {
+//   var nuevoNombre = prompt('Ponele un nombre a tu playlist!')
+//   window.localStorage.setItem('nombrePlaylist', JSON.stringify(nuevoNombre))
+//   document.querySelector('h1').innerHTML = nuevoNombre
+// } else {
+ 
+//   var nombreDePlaylist = JSON.parse(window.localStorage.getItem("nombrePlaylist"))
+
+//   document.querySelector('h1').innerHTML = nombreDePlaylist
+// }
+
+
+// localStorage.removeItem('nombrePlaylist')
+
+
+
+
+
+
 var trackId =''
 
 var nombreCancion ='' 
