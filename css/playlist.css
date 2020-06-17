@@ -193,7 +193,11 @@ p{
     width: fit-content;
     margin: auto;
   }
-
+.iframe-cancion{
+  width: fit-content;
+  margin: auto;
+margin-bottom: 5%;
+}
 
   /* MOBILE VERSION */
 

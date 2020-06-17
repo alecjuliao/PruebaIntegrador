@@ -14,9 +14,6 @@ var tiempoCancion =''
 var tiempoMinuto ='' 
 var tiempoSegundo ='' 
 var segundos = ''
-var eliminar = ''
-
-
 
 
  if (arrayIdsCanciones == null || arrayIdsCanciones == "") {
@@ -89,33 +86,9 @@ var eliminar = ''
 
    }// for NO BORRAR
 
-   
-   for (let i = 0; i < arrayIdsCanciones.length; i++) {
-     const element = arrayIdsCanciones[i];
-     
-   }
- }// no borrar!! IF ELSE
 
 
-
-  
-
-
-
-
-////////// ELIMINAR CANCION DE PLAYLIST
-
-// var eliminar = document.querySelector('#eliminar-de-playlist')
-
-//    eliminar.onclick = function(){
-  
-  
-//   console.log()
-  
-  //  }  
-           
-
-
+}// no borrar!! IF ELSE
 
 
 
