@@ -194,9 +194,17 @@ p{
     margin: auto;
   }
 .iframe-cancion{
-  width: fit-content;
+  width: 70%;
   margin: auto;
 margin-bottom: 5%;
+}
+.cancion-player{
+  background-color: rgb(9, 17, 19);
+  border: rgb(33, 44, 44)  2px solid ;
+  /* height: 20%; */
+}
+.fb_reset{
+  background: rgb(9, 17, 19);
 }
 
   /* MOBILE VERSION */
@@ -218,5 +226,4 @@ margin-bottom: 35%;
     font-size: small;
     margin: auto;
   }
-
 }
