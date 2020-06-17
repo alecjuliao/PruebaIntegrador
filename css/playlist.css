@@ -164,7 +164,7 @@ p{
   
   }
   .vacia{
-    background-color: rgba(30, 30, 30, 0.4);
+    
     width: 50%;
     margin:auto;
     padding: 1%;
@@ -173,6 +173,7 @@ p{
   }
 
   .vacia p{
+    background-color: rgba(30, 30, 30, 0.4);
     width: fit-content;
     margin: auto;
     color:rgba(199, 226, 226);
