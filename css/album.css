@@ -228,7 +228,10 @@ color: rgba(199, 226, 226);
 }
 
 
-
+.lista-canciones .loading{
+  width: 20%;
+  margin: auto;
+}
 
 
 /* SECCION ALBUMES */

@@ -22,7 +22,7 @@ var contenedorArtista = document.querySelector('.resultado-artistas')
 var contenido =''
  if (information.data.length == 0) {
    contenido= '<li id="informacion-sin-resultado" class="informacion-artista"><p class="sin-resultado">Lo sentimos, no encontramos resultados</p></li>'
-   document.querySelector('.resultado-artistas').innerHTML += contenido
+   document.querySelector('.resultado-artistas').innerHTML = contenido
  } else {
   for (let i = 0; i < 4 && i< information.data.length; i++) {
     const element = information.data[i];
@@ -65,7 +65,7 @@ document.querySelector('.resultado-tracks').innerHTML = '<img src="../img/loadin
     var contenido =''
    if (information.data.length == 0) {
     contenido= '<li id="informacion-sin-resultado" class="informacion-track"><p class="sin-resultado">Lo sentimos, no encontramos resultados</p></li>'
-    document.querySelector('.resultado-tracks').innerHTML += contenido
+    document.querySelector('.resultado-tracks').innerHTML = contenido
    } else {
     var contenedorTrack = document.querySelector('.resultado-tracks')
     var contenido =''
@@ -118,7 +118,7 @@ document.querySelector('.resultado-tracks').innerHTML = '<img src="../img/loadin
     var contenido =''
    if (information.data.length == 0) {
     contenido= '<li id="informacion-sin-resultado" class="informacion-albumes"><p class="sin-resultado">Lo sentimos, no encontramos resultados</p></li>'
-    document.querySelector('.resultado-albumes').innerHTML += contenido
+    document.querySelector('.resultado-albumes').innerHTML = contenido
    } else {
     var contenedorAlbum = document.querySelector('.resultado-albumes')
     var contenido =''

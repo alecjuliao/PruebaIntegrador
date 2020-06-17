@@ -189,6 +189,19 @@ border-radius: 100%;
   display: none;
 }
 
+.contenedor-albumes .loading{
+width: 20%;
+margin: auto;
+}
+.contenedor-artistas .loading{
+  width: 20%;
+  margin: auto;
+
+}
+.contenedor-tracks .loading{
+  width: 20%;
+  margin: auto;
+}
 @media (max-width:460px){
 /* ARRANCA HEADER  */
   #header{

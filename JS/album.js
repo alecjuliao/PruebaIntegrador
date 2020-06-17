@@ -12,7 +12,7 @@ window.onload = function(){
   // var idAlbum = 136522252
   // var idAlbum = 145596282
   
-  document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+  // document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
 
   ////// TOP CANCIONES
    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/album/'+idAlbum)
@@ -79,7 +79,7 @@ window.onload = function(){
 
  
 
- document.querySelector('.nombre-imagen').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+ document.querySelector('.nombre-imagen').innerHTML = '<img class="loading" src="../img/loading gif.gif" alt="gif"></img> '
  
  ///////////////// IMAGEN + TITULO ALBUM + NOMBRE ARTISTA
 
