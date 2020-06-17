@@ -78,7 +78,7 @@ document.querySelector('.resultado-tracks').innerHTML = '<img src="../img/loadin
       var IdAlbum = element.album.id
         contenido += '<li class="informacion-track">'
         contenido += '<div class="imagen-artista">'
-        contenido += '<a class="link-imagen-track" href="album.html?IdAlbum='+IdAlbum+'"><img src="'+element.album.cover_medium+'" alt=""></a>'
+        contenido += '<a class="link-imagen-track" href="track.html?IdTrack='+trackId+'"><img src="'+element.album.cover_medium+'" alt=""></a>'
         contenido += '</div>'
         contenido += '<div class="informacion">'
         contenido += '<h2><a href="track.html?IdTrack='+trackId+'">'+element.title+'</a></h2>'

@@ -105,14 +105,14 @@ var eliminar = ''
 
 ////////// ELIMINAR CANCION DE PLAYLIST
 
-var eliminar = document.querySelector('#eliminar-de-playlist')
+// var eliminar = document.querySelector('#eliminar-de-playlist')
 
-   eliminar.onclick = function(){
+//    eliminar.onclick = function(){
   
   
-  console.log()
+//   console.log()
   
-   }  
+  //  }  
            
 
 
