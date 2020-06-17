@@ -21,6 +21,7 @@ var segundos = ''
      const element = arrayIdsCanciones[i];
     //  console.log(arrayIdsCanciones)
      trackId = element
+    
 
      fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackId)
      .then(function(response) {
@@ -54,7 +55,7 @@ var segundos = ''
                    var contenido = '<li class="cancion">'
                    contenido += '<div class="cancion-play">'
                    contenido += '<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
-                   contenido += ' <a href="track.html?IdTrack=trackId">'+nombreCancion +'  '+'-'+'  '+ nombreArtista+'</a>'
+                   contenido += ' <a href="track.html?IdTrack='+information.id+'">'+nombreCancion +'  '+'-'+'  '+ nombreArtista+'</a>'
                    contenido += ' </div>'
                    contenido += '<div class="duracion">'+tiempoMinuto+':'+segundos+'</div>'
                    contenido += '<div class="eliminar">'
@@ -72,10 +73,7 @@ var segundos = ''
                    
               
                    document.querySelector('.canciones').innerHTML += contenido
-    
-       
-                   
-        
+                 
        })
       
       .catch(function(error) {
@@ -83,25 +81,28 @@ var segundos = ''
        })
 
 
-   }
- }
+   }// for NO BORRAR
+
+   
+ }// no borrar!! IF ELSE
 
 
 
-console.log(trackId)
+
 
 
 
 ////////// ELIMINAR CANCION DE PLAYLIST
-//  var eliminar = document.querySelector('#eliminar-de-playlist')
 
-//  eliminar.onclick = function(){
+// var eliminar = document.querySelector('#eliminar-de-playlist')
 
-
-
-
-//  }
-
+  //  eliminar.onclick = function(){
+  
+  
+  // console.log(this.trackId)
+  
+  //  }  
+           
 
 
 
@@ -115,45 +116,7 @@ console.log(trackId)
 
 
 
-//   var idCancionesPlaylist = [
-  
-//   ];
 
 
-
-// JSON.parse(localStorage.getItem("idCancionesPlaylist"))
-// console.log(idCancionesPlaylist);
-
-// // idCancionesPlaylist.push(1)
-// // idCancionesPlaylist.push(2)
-// // idCancionesPlaylist.push(3)
-// // idCancionesPlaylist.push(4)
-// // idCancionesPlaylist.push(5)
-
-
-// console.log(idCancionesPlaylist)
-
-// localStorage.setItem("idCancionesPlaylist",JSON.stringify(idCancionesPlaylist.push(1,2,3,4,5)))
-
-//   // idCancionesPlaylist.push("834756");
-  
-//   // localStorage.setItem("idCancionesPlaylist", idCancionesPlaylist.push(JSON.stringify(7)));
-//   // // localStorage.setItem("idCancionesPlaylist", idCancionesPlaylist.push(JSON.stringify(IDCANCION)));
-  
-  
-//   // localStorage.setItem("idCancionesPlaylist", JSON.stringify(7))
-//   // // localStorage.setItem("idCancionesPlaylist", JSON.stringify("0"))
-//   // // localStorage.setItem("idCancionesPlaylist", JSON.stringify("29"))
-  
-//   // localStorage.getItem("idCancionesPlaylist")
-  
-  
-  
-//   // console.log(idCancionesPlaylist);
-//   // idCancionesPlaylist.push("834756");
-//   // idCancionesPlaylist.push("56"); 
-//   // idCancionesPlaylist.push("86");
-//   // idCancionesPlaylist.push("26");
-  
 
 
