@@ -319,6 +319,9 @@ text-decoration: none;
     box-sizing: border-box;
     padding-bottom: 5%;
   }
+  main {
+    width: 100%;
+  }
   .container-contenido-album{
     border-radius: 0;
     margin-bottom: 5%;
@@ -326,7 +329,9 @@ text-decoration: none;
 
   }
 .nombre-imagen{
-  width: 50%;
+  width: 90%;
+  margin: 0px;
+  padding: 0;
 }
 
  .lista-canciones li{
@@ -378,5 +383,13 @@ text-decoration: none;
 .duracion{
   font-size: x-small;
 }
+.artista-fechaLanzamiento{
+  height: fit-content;
+}
+.nombre-album{
+  /* margin: auto; */
+  width: fit-content;
+}
+
 
 }

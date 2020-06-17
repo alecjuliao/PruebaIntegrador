@@ -228,3 +228,36 @@ width: 100%;
 color: white;
 font-size: large;
 }
+
+@media (max-width:460px){
+
+
+  .informacion-artista{
+    width: 45%;
+    margin: auto;
+    list-style: none;
+    margin-bottom: 7%;
+    margin-top: 7%;
+    
+  }
+
+  
+  .informacion-track{
+    width: 44%;
+    margin: auto;
+    list-style: none;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    color: white;
+  }
+  .informacion-album{
+    width: 40%;
+    margin: auto;
+    list-style: none;
+    margin-top: 2%;
+    color: white;
+  
+  }
+
+
+}

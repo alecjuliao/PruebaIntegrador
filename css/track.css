@@ -257,11 +257,13 @@ color: rgba(199, 226, 226);
   }
 .titulo-cancion h1{
   width: fit-content;
+  margin: auto;
+  margin-top: 15%;
   
 }
-.titulo-cancion a{
+/* .titulo-cancion a{
   margin-left: auto;
-}
+} */
 
 /* ESTOY TENIENDO PROBLEMAS CON CENTRAR EL TITULO H1 */
 .button{
@@ -277,6 +279,12 @@ button{
 
 .album-artista{
   width: 85%;
+  
+}
+
+.album-artista .titulo{
+  font-size: large;
+  margin-bottom: 14%;
 }
 
 

@@ -193,3 +193,26 @@ p{
     width: fit-content;
     margin: auto;
   }
+
+
+  /* MOBILE VERSION */
+
+@media (max-width:460px){
+  .contenedor-canciones {
+width: 99%;
+margin: auto;
+margin-bottom: 35%;
+  }
+  .canciones{
+    width: 98%;
+    box-sizing: border-box;
+    padding: .5%;
+    margin: auto;
+  }
+
+  .cancion{
+    font-size: small;
+    margin: auto;
+  }
+
+}
