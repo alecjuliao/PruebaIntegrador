@@ -14,6 +14,7 @@ var tiempoCancion =''
 var tiempoMinuto ='' 
 var tiempoSegundo ='' 
 var segundos = ''
+var eliminar = ''
  if (arrayIdsCanciones == null || arrayIdsCanciones == "") {
    document.querySelector('.vacia').innerHTML = '<p class="tituloVacia">Todavia no agregaste canciones a tu Playlist... <br><br><br> ¡Explora la pagina y armala con tu musica favorita!</p><br><h4><a href="home.html">Home<a/></h4>'
  } else {
@@ -73,6 +74,7 @@ var segundos = ''
                    
               
                    document.querySelector('.canciones').innerHTML += contenido
+                   console.log(information.id)
                  
        })
       
@@ -84,10 +86,12 @@ var segundos = ''
    }// for NO BORRAR
 
    
+   
  }// no borrar!! IF ELSE
 
 
 
+  
 
 
 
