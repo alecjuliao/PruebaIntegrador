@@ -144,7 +144,8 @@ var divBoton = document.querySelector('.iframe-cancion')
 
      var botonEliminarPlaylist = document.querySelector('.eliminar-todo')
             botonEliminarPlaylist.onclick = function(){
-              localStorage.removeItem('listaPlaylist')
+              localStorage.removeItem("listaPlaylist");
+              location.reload();
                   }
 }// no borrar!! IF ELSE
 

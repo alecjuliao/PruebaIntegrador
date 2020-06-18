@@ -1,13 +1,17 @@
 
 
 window.onload = function(){
+
+    var querystring = location.search;
+    var query2 = new URLSearchParams(querystring)
+    var id = query2.get("id")
     //console.log(location.search)
     //var queryString=location.search
     
     //var queryStringOBJ=new this.URLSearchParams(queryString)
     //var IdArtist=queryStringOBJ.get('IdArtista')
 
-    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/116")
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+ id + "")
     .then(function(response){
         return response.json()
     })
@@ -25,7 +29,7 @@ window.onload = function(){
 
     })
     document.querySelector(".contenido").innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
-    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/116/artists")
+    fetch("https://cors-anywhere.herokuapp.com/https://api.deezer.com/genre/"+ id +"/artists")
     .then(function(response){
         return response.json()
     })
