@@ -8,8 +8,11 @@ var queryString = location.search
 var queryStringOBJ = new this.URLSearchParams(queryString)
 var trackId = queryStringOBJ.get('IdTrack')
   
+var contenedorIframe = document.querySelector('.iframe-cancion')
+contenedorIframe.innerHTML = '<iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+trackId+'&app_id=1" width="100%" height="90"></iframe>'
 
-document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+document.querySelector('.parte-album').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+document.querySelector('.parte-artista').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackId)
     .then(function(response) {
       return response.json()
@@ -123,7 +126,6 @@ boton.onclick = function(){
 }/// boton.onclick
 
 console.log(JSON.parse(localStorage.getItem('listaPlaylist')))
-
 
   }// cierra window.onload
 

@@ -247,7 +247,11 @@ color: rgba(199, 226, 226);
 
 
 }
-
+.iframe-cancion{
+  width: 70%;
+  margin: auto;
+margin-bottom: 5%;
+}
 
 /* ///////////////////////////// MOBILE VERSION */
 @media (max-width:460px){
