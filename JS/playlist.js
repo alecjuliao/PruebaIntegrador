@@ -131,11 +131,16 @@ var segundos = ''
 
    }// for NO BORRAR
 
+   var contenidoIframe = ' <iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true"'
+    contenidoIframe += 'src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&'
+    contenidoIframe += 'type=tracks&id=479348202&app_id=1" width="100%" height="96"></iframe>'
+
+  
+ 
 
 
 
-   
-
+  document.querySelector('.iframe-cancion').innerHTML= contenidoIframe
 }// no borrar!! IF ELSE
 
 ///// onclick del play circle, meter este iframe con inner html con el track id del track al que le puso play
