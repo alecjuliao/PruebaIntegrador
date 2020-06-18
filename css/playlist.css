@@ -174,7 +174,7 @@ p{
   }
 
   .vacia p{
-    background-color: rgba(30, 30, 30, 0.4);
+    /* background-color: rgba(30, 30, 30, 0.4); */
     width: fit-content;
     margin: auto;
     color:rgba(199, 226, 226);
@@ -206,7 +206,17 @@ margin-bottom: 5%;
 .fb_reset{
   background: rgb(9, 17, 19);
 }
-
+.eliminar-todo  {
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+button {
+  margin: auto;
+  background-color:rgba(199, 226, 226);
+  
+}
   /* MOBILE VERSION */
 
 @media (max-width:460px){

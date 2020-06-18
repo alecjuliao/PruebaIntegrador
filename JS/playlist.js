@@ -60,9 +60,12 @@ var tiempoMinuto =''
 var tiempoSegundo ='' 
 var segundos = ''
 
-
+var divIframe = document.querySelector('.eliminar-todo')
+var divBoton = document.querySelector('.iframe-cancion')
  if (arrayIdsCanciones == null || arrayIdsCanciones == "") {
    document.querySelector('.vacia').innerHTML = '<p class="tituloVacia">Todavia no agregaste canciones a tu Playlist... <br><br><br> ¡Explora la pagina y armala con tu musica favorita!</p><br><h4><a href="home.html">Home<a/></h4>'
+   divBoton.style.display = 'none'
+   divIframe.style.display = 'none'
  } else {
    for (let i = 0; i < arrayIdsCanciones.length; i++) {
      const element = arrayIdsCanciones[i];
