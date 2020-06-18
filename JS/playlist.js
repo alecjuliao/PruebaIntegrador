@@ -144,7 +144,12 @@ var divBoton = document.querySelector('.iframe-cancion')
 
      var botonEliminarPlaylist = document.querySelector('.eliminar-todo')
             botonEliminarPlaylist.onclick = function(){
-              localStorage.removeItem('listaPlaylist')
+              var borrarPlaylistCheck = 'Estas seguro de borrar la playlist?'
+              var resultadoCheck = confirm(borrarPlaylistCheck)
+              if (resultadoCheck == true) {
+                localStorage.removeItem('listaPlaylist')
+              } 
+              
                   }
 }// no borrar!! IF ELSE
 
