@@ -104,7 +104,8 @@ var divBoton = document.querySelector('.iframe-cancion')
    
                    var contenido = '<li class="cancion">'
                    contenido += '<div class="cancion-play">'
-                   contenido += '<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
+                   //MIRA ACAAAAAAAA Y SEGUILO VOS LINEA 108 Y ABAJO DE TODO TE DEJE UNA FUNCION PARA QUE VOS HAGAS LA MAGIA. ALGO MUY PARECIDO TENES QUE HACER PARA ELIMINAR.
+                   contenido += '<i onclick="reproducirCancion(this.id)" id="' + information.Id + '" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
                    contenido += ' <a href="track.html?IdTrack='+information.id+'">'+nombreCancion +'  '+'-'+'  '+ nombreArtista+'</a>'
                    contenido += ' </div>'
                    contenido += '<div class="duracion">'+tiempoMinuto+':'+segundos+'</div>'
@@ -180,7 +181,11 @@ var divBoton = document.querySelector('.iframe-cancion')
 
 
 
+function reproducirCancion (idCancion){
 
+  //aca tenes que hacer lo que haga falta con el iframe para que ponga la cancion que vos quieras. 
+
+}
 
 
 
