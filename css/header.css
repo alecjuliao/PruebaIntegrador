@@ -70,6 +70,24 @@
     color: rgba(199, 226, 226);
     text-decoration: none;
 }
+.opciones .generos{
+    order:1;
+}
+.opciones .albumes{
+    order:2;
+}
+.opciones .artistas{
+    order:3;
+}
+.opciones .tracks{
+    order:4;
+}
+.opciones .podcast{
+    order:5;
+}
+.opciones .search{
+    order:6;
+}
 
 form{
     width: 90%;
