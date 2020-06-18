@@ -135,8 +135,10 @@ var segundos = ''
 
 }// no borrar!! IF ELSE
 
-
-
+///// onclick del play circle, meter este iframe con inner html con el track id del track al que le puso play
+//  <iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true" 
+//      src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+Ccatenar id track+'&app_id=1" 
+///     width="100%" height="96"></iframe>
 
 
 // var botonEliminarPlaylist = document.querySelector('h1')
