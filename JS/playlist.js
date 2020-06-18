@@ -141,7 +141,7 @@ var divBoton = document.querySelector('.iframe-cancion')
      document.querySelector('.iframe-cancion').innerHTML= contenidoIframe
 
 
-
+     document.querySelector('.eliminar-todo').innerHTML = '<button type="button" class="eliminarToda">Eliminar la playlist</button>'
      var botonEliminarPlaylist = document.querySelector('.eliminar-todo')
             botonEliminarPlaylist.onclick = function(){
               var borrarPlaylistCheck = 'Estas seguro de borrar la playlist?'
@@ -160,6 +160,20 @@ var divBoton = document.querySelector('.iframe-cancion')
 
 
 // 
+
+/////////// NO ME ESTA SALIENDO. NO ENTIENDO PORQUE NO ME DEJA PONERLE UN EVENT LISTENER A ALGO QUE PUSE CON INNER HTML ANTES. 
+// cuando pongo probando boton = doc.qs h1 me deja pero si pongo la clase del play circle no me deja
+// console.log(arrayIdsCanciones)
+// var probandoBoton = document.querySelector('h1')
+// var probandoBoton = document.querySelector('#eliminar-de-playlist') // este no me deja lrpm
+// probandoBoton.addEventListener('click', function(){
+// for (let i = 0; i < arrayIdsCanciones.length; i++) {
+//   const element = arrayIdsCanciones[i];
+//   // console.log(this.element)
+//   console.log(element)
+// }
+// })
+
 
 
 }// no borrar. window.onload
