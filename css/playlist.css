@@ -129,7 +129,7 @@ p{
   }
   
   
-  #play-circle-cancion{
+  .fa-play-circle-o{
     color: white;
     transition: .1s ease;
     opacity: 0.4;

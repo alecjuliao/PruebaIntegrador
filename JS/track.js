@@ -51,11 +51,11 @@ document.querySelector('.parte-artista').innerHTML = '<img src="../img/loading g
         var contenedorCancion = document.querySelector('.lista-canciones')
           
   
-        var contenidoListaCanciones = '<div class="cancion-play">'
-        contenidoListaCanciones += '<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
-        contenidoListaCanciones += '<a  href="#button">'+nombreCancion+'</a>'
-        contenidoListaCanciones += '</div> '
-        contenidoListaCanciones += '<div class="duracion">'+tiempoMinuto+':'+segundos+'</div>'
+        // var contenidoListaCanciones = '<div class="cancion-play">'
+        // contenidoListaCanciones += '<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
+        // contenidoListaCanciones += '<a  href="#button">'+nombreCancion+'</a>'
+        // contenidoListaCanciones += '</div> '
+        var contenidoListaCanciones = '<div class="duracion">Duracion: '+tiempoMinuto+':'+segundos+'</div>'
   
         contenedorCancion.innerHTML = contenidoListaCanciones
   

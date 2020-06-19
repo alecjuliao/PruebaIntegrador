@@ -25,6 +25,8 @@ if (JSON.parse(window.localStorage.getItem("nombrePlaylist")=== null)) {
 }
 
 
+  // localStorage.removeItem('nombrePlaylist')
+
 // if (JSON.parse(window.localStorage.getItem("nombrePlaylist")=== null)) {
 //   var nuevoNombre = prompt('Ponele un nombre a tu playlist!')
 //   if (nuevoNombre =='') {
@@ -72,7 +74,7 @@ var divBoton = document.querySelector('.iframe-cancion')
     //  console.log(arrayIdsCanciones)
      trackId = element
     
-
+console.log(trackId)
      fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackId)
      .then(function(response) {
        return response.json()
@@ -100,12 +102,12 @@ var divBoton = document.querySelector('.iframe-cancion')
                    }
    
    
-      
-   
+       //MIRA ACAAAAAAAA Y SEGUILO VOS LINEA 108 Y ABAJO DE TODO TE DEJE UNA FUNCION PARA QUE VOS HAGAS LA MAGIA. ALGO MUY PARECIDO TENES QUE HACER PARA ELIMINAR.
+  //  seria la tercera linea 
+  //  contenido += '<i onclick="reproducirCancion(this.id)" id="' + information.Id + '" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
                    var contenido = '<li class="cancion">'
                    contenido += '<div class="cancion-play">'
-                   //MIRA ACAAAAAAAA Y SEGUILO VOS LINEA 108 Y ABAJO DE TODO TE DEJE UNA FUNCION PARA QUE VOS HAGAS LA MAGIA. ALGO MUY PARECIDO TENES QUE HACER PARA ELIMINAR.
-                   contenido += '<i onclick="reproducirCancion(this.id)" id="' + information.Id + '" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
+                   contenido += '<i  onclick="reproducirCancion(this.id)" id="' + trackId + '"class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
                    contenido += ' <a href="track.html?IdTrack='+information.id+'">'+nombreCancion +'  '+'-'+'  '+ nombreArtista+'</a>'
                    contenido += ' </div>'
                    contenido += '<div class="duracion">'+tiempoMinuto+':'+segundos+'</div>'
@@ -132,14 +134,16 @@ var divBoton = document.querySelector('.iframe-cancion')
          console.log("Error: " + error);
        })
 
-
+       
+      
+      
    }// for NO BORRAR
 
    // si la lista no esta vacia, traeme el iframe. 
-   var contenidoIframe = ' <iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true"'
-    contenidoIframe += 'src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&'
-    contenidoIframe += 'type=tracks&id=479348202&app_id=1" width="100%" height="96"></iframe>'
-     document.querySelector('.iframe-cancion').innerHTML= contenidoIframe
+  //  var contenidoIframe = ' <iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true"'
+  //   contenidoIframe += 'src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&'
+  //   contenidoIframe += 'type=tracks&id=479348202&app_id=1" width="100%" height="96"></iframe>'
+  //    document.querySelector('.iframe-cancion').innerHTML= contenidoIframe
 
 
      document.querySelector('.eliminar-todo').innerHTML = '<button type="button" class="eliminarToda">Eliminar la playlist</button>'
@@ -181,9 +185,14 @@ var divBoton = document.querySelector('.iframe-cancion')
 
 
 
-function reproducirCancion (idCancion){
+function reproducirCancion (trackId){
 
   //aca tenes que hacer lo que haga falta con el iframe para que ponga la cancion que vos quieras. 
+  // console.log(idCancion)
+  var contenidoIframe = ' <iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true"'
+  contenidoIframe += 'src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&'
+  contenidoIframe += 'type=tracks&id='+trackId+'&app_id=1" width="100%" height="96"></iframe>'
+   document.querySelector('.iframe-cancion').innerHTML= contenidoIframe
 
 }
 
