@@ -7,32 +7,11 @@ window.onload = function(){
   // localStorage.removeItem('nombrePlaylist')
 
   
-if (JSON.parse(window.localStorage.getItem("nombrePlaylist")=== null)) {
-  var nuevoNombre = prompt('Ponele un nombre a tu playlist!')
-  if (nuevoNombre == null) {
-    document.querySelector('h1').innerHTML = '<h1 class="play-list">Tu PlayList</h1>'
-    
-  } else {
-    window.localStorage.setItem('nombrePlaylist', JSON.stringify(nuevoNombre))
-  document.querySelector('h1').innerHTML = nuevoNombre
-  }
-  
-} else {
- 
-  var nombreDePlaylist = JSON.parse(window.localStorage.getItem("nombrePlaylist"))
-
-  document.querySelector('h1').innerHTML = nombreDePlaylist
-}
-
-
-  // localStorage.removeItem('nombrePlaylist')
-
 // if (JSON.parse(window.localStorage.getItem("nombrePlaylist")=== null)) {
 //   var nuevoNombre = prompt('Ponele un nombre a tu playlist!')
-//   if (nuevoNombre =='') {
-//   contenidoH1 = 'Tu PlayList'
-//     document.querySelector('h1').innerHTML = contenidoH1
-//     window.localStorage.setItem('nombrePlaylist', JSON.stringify(contenidoH1))
+//   if (nuevoNombre == null) {
+//     document.querySelector('h1').innerHTML = '<h1 class="play-list">Tu PlayList</h1>'
+    
 //   } else {
 //     window.localStorage.setItem('nombrePlaylist', JSON.stringify(nuevoNombre))
 //   document.querySelector('h1').innerHTML = nuevoNombre
@@ -44,6 +23,27 @@ if (JSON.parse(window.localStorage.getItem("nombrePlaylist")=== null)) {
 
 //   document.querySelector('h1').innerHTML = nombreDePlaylist
 // }
+
+
+  // localStorage.removeItem('nombrePlaylist')
+
+if (JSON.parse(window.localStorage.getItem("nombrePlaylist")=== null)) {
+  var nuevoNombre = prompt('Ponele un nombre a tu playlist!')
+  if (nuevoNombre =='') {
+  contenidoH1 = 'Tu PlayList'
+    document.querySelector('h1').innerHTML = contenidoH1
+    window.localStorage.setItem('nombrePlaylist', JSON.stringify(contenidoH1))
+  } else {
+    window.localStorage.setItem('nombrePlaylist', JSON.stringify(nuevoNombre))
+  document.querySelector('h1').innerHTML = nuevoNombre
+  }
+  
+} else {
+ 
+  var nombreDePlaylist = JSON.parse(window.localStorage.getItem("nombrePlaylist"))
+
+  document.querySelector('h1').innerHTML = nombreDePlaylist
+}
 
 
 
@@ -195,9 +195,13 @@ function reproducirCancion (trackId){
   contenidoIframe += 'type=tracks&id='+trackId+'&app_id=1" width="100%" height="96"></iframe>'
    document.querySelector('.iframe-cancion').innerHTML= contenidoIframe
 
+
+
 }
 
 
+// function eliminarCancion (){
 
+// }
 
 
