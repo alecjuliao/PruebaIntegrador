@@ -1,0 +1,60 @@
+body{
+  margin: 0;
+  background-color: rgb(9, 17, 19);
+}
+
+h1{
+  color: white;
+  font-size: 4rem;
+  text-transform: capitalize;
+  width: fit-content;
+  margin: auto;
+  margin-bottom: 6%;
+  margin-top: 6%;
+}
+.contenedor-podcasts{
+  background-color: rgba(30, 30, 30, 0.4);
+  width: 90%;
+  margin: auto;
+  border-radius: 2rem;
+  height: fit-content;
+  margin-bottom: 4%;
+  padding: 1%;
+  box-sizing: border-box;
+  
+}
+
+.informacion-podcast{
+  display: flex;
+  margin: auto;
+  margin-bottom: 3%;
+  box-sizing: border-box;
+  
+}
+
+.imagen-podcast img{
+  margin: auto;
+  border-radius: 100%;
+
+}
+.imagen-podcast p{
+  width: fit-content;
+  color: white;
+  text-transform: capitalize;
+  margin: auto;
+  margin-top: 3%;
+}
+
+.informacion{
+  margin-left: 5%;
+  color: white;
+}
+.informacion h4{
+  
+  
+  font-size: x-large;
+}
+.informacion a{
+  color: white;
+  text-decoration: none;
+}
