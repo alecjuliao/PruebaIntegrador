@@ -21,7 +21,7 @@ window.onload = function(){
       })
 
 
-
+// ahora cuando clickeas en el genero , te lleva a los artistas correspondientes de ese mismo !!! ///
 
 }
 
