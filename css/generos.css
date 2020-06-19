@@ -155,7 +155,22 @@ transition: 1s ease;
 
  }
 
-
+ .img-generos1{
+     display: flex;
+     list-style: none;
+     flex-wrap: wrap;
+     margin: 0;
+     padding: 0;
+     justify-content: space-around;
+ }
+ .img-generos1 li a img {
+     width: 10vw;
+ 
+ }
+ .img-generos1 li a h2 {
+    width: 10vw;
+    text-align: center;
+}
 footer{
     display:flex;
     position: relative;
