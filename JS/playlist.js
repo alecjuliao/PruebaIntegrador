@@ -149,6 +149,8 @@ console.log(trackId)
      document.querySelector('.eliminar-todo').innerHTML = '<button type="button" class="eliminarToda">Eliminar la playlist</button>'
      var botonEliminarPlaylist = document.querySelector('.eliminar-todo')
             botonEliminarPlaylist.onclick = function(){
+              localStorage.removeItem("listaPlaylist");
+              location.reload();
               var borrarPlaylistCheck = 'Estas seguro de borrar la playlist?'
               var resultadoCheck = confirm(borrarPlaylistCheck)
               if (resultadoCheck == true) {

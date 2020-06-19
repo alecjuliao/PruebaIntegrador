@@ -1,19 +1,44 @@
 window.onload =function(){
 
-  console.log('funciona');
-   var trackId = 904224282
-   console.log(location.search)
-
-var queryString = location.search 
-var queryStringOBJ = new this.URLSearchParams(queryString)
-var trackId = queryStringOBJ.get('IdTrack')
+    // FAVORITOS
+    var recuperoStorage = localStorage.getItem("listaPlaylist");
   
+    // Si todavía no tenía gifs favoritos
+    if (recuperoStorage == null) {
+      // Creo una lista vacia
+      trackplaylist = [];
+    } else {
+      // Descomprimo el TEXTO que tenia en storage en el array que necesito trabajar
+      trackplaylist = JSON.parse(recuperoStorage);
+    }
+  
+    
+    /*FavoritoS */
+  
+    var datos = new URLSearchParams(location.search);
+    var id = datos.get("IdTrack");
+  
+    if (trackplaylist.includes(id)) {
+      document.querySelector("#button").innerHTML = "Quitar de mi Playlist";
+    }
+
+
+    // esto me esta rompiendo el localStorage de Playlisttttt 
+  
+/*document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+id)
 var contenedorIframe = document.querySelector('.iframe-cancion')
-contenedorIframe.innerHTML = '<iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+trackId+'&app_id=1" width="100%" height="90"></iframe>'
+contenedorIframe.innerHTML = '<iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+id+'&app_id=1" width="100%" height="90"></iframe>'
 
 document.querySelector('.parte-album').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
-document.querySelector('.parte-artista').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
-    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+trackId)
+document.querySelector('.parte-artista').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '*/
+
+
+
+
+
+
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+id)
     .then(function(response) {
       return response.json()
     })
@@ -96,6 +121,32 @@ document.querySelector('.parte-artista').innerHTML = '<img src="../img/loading g
   
 
 
+  
+  
+      document.querySelector("#button").onclick = function() {
+  
+        var botonFavorito = document.querySelector("#button")
+    
+        //Paso 2: Modificar la informacion
+        // Si la serie ya era favorito
+        if (trackplaylist.includes(id)) {
+          // Lo quito
+          var index = trackplaylist.indexOf(id);
+          trackplaylist.splice(index, 1);
+          botonFavorito.innerHTML = "Agregar a mi Playlist";
+        } else {
+          //Lo agrego
+          trackplaylist.push(id);
+          botonFavorito.innerHTML = "Quitar de mi Playlist";
+        }
+    
+    
+        //Paso 3: Escribir en storage
+        var infoParaStorage = JSON.stringify(trackplaylist);
+        localStorage.setItem("listaPlaylist", infoParaStorage);
+        console.log(localStorage);
+      }
+    
 
 
 
@@ -109,21 +160,21 @@ var boton = document.querySelector('#button')
 
 // localStorage.setItem('listaPlaylist', JSON.stringify(miObjeto));
 
-boton.onclick = function(){
+/*boton.onclick = function(){
 
   if (JSON.parse(localStorage.getItem('listaPlaylist')) === null) {
-    var nuevaLista = [trackId];
+    var nuevaLista = [id];
     localStorage.setItem('listaPlaylist', JSON.stringify(nuevaLista));
 
   } else {
     var miLista = JSON.parse(localStorage.getItem('listaPlaylist'))
-    miLista.push(trackId)
+    miLista.push(id)
     localStorage.setItem('listaPlaylist', JSON.stringify(miLista));
 
   }
 
 
-}/// boton.onclick
+}*//// boton.onclick
 
 console.log(JSON.parse(localStorage.getItem('listaPlaylist')))
 

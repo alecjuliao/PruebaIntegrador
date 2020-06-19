@@ -56,7 +56,7 @@ window.onload = function(){
         contenido+='</div> '
         contenido+='<div class="duracion">' + tiempoMinuto+':'+segundos + '</div>'+' '
         contenido+='<div class="agregar">'
-        contenido+='<i class="fas fa-plus fa-1x" id="agregar-a-playlist"></i>'
+        contenido+='<button id="agregar-a-playlist">" Agregar"</button>'
         contenido+='</div>'
         contenido+='</li>'
        
