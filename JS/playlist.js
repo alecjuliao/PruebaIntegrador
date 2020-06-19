@@ -153,6 +153,7 @@ console.log(trackId)
               var resultadoCheck = confirm(borrarPlaylistCheck)
               if (resultadoCheck == true) {
                 localStorage.removeItem('listaPlaylist')
+                document.querySelector('.canciones').style.display = 'none'
               } 
               
                   }
