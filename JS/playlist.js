@@ -151,6 +151,13 @@ console.log(trackId)
             botonEliminarPlaylist.onclick = function(){
               localStorage.removeItem("listaPlaylist");
               location.reload();
+              var borrarPlaylistCheck = 'Estas seguro de borrar la playlist?'
+              var resultadoCheck = confirm(borrarPlaylistCheck)
+              if (resultadoCheck == true) {
+                localStorage.removeItem('listaPlaylist')
+                document.querySelector('.canciones').style.display = 'none'
+              } 
+              
                   }
 }// no borrar!! IF ELSE
 
