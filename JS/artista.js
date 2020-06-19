@@ -55,9 +55,9 @@ window.onload = function(){
         contenido+='<a href="track.html?IdTrack='+trackId+'">'+element.title_short +'</a>'
         contenido+='</div> '
         contenido+='<div class="duracion">' + tiempoMinuto+':'+segundos + '</div>'+' '
-        contenido+='<div class="agregar">'
-        contenido+='<button id="agregar-a-playlist">" Agregar"</button>'
-        contenido+='</div>'
+        // contenido+='<div class="agregar">'
+        // contenido+='<button id="agregar-a-playlist">" Agregar"</button>'
+        // contenido+='</div>'
         contenido+='</li>'
        
           contenedorCancion.innerHTML = contenido;
