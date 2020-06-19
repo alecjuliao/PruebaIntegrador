@@ -1,4 +1,7 @@
 
+body{
+  background-color:rgb(9, 17, 19) ;
+}
 .container{
     width: 100%;
   }
@@ -26,7 +29,7 @@
     text-align: center;
     text-transform: uppercase;
     text-decoration: none;
-    color: white;
+    color: rgba(199, 226, 226);
     height: 50px;
     font-size: larger;
     font-weight: bold;
@@ -36,7 +39,7 @@
   /* SECCION BARRA INFORMACION */
   .barra-informacion{
     width: 100%;
-    background-color: rgba(43, 44, 43,0.4);
+    
     border-radius: 50px;
     
     
@@ -50,7 +53,7 @@
   }
   .informacion-artista a{
    text-decoration: none;
-   color: white;
+   color:rgba(199, 226, 226);
     
   }
   .informacion-artista li{
@@ -66,6 +69,8 @@
   padding: 10px;
   box-sizing: border-box;
   background-color: rgb(43, 44, 43,0.4);
+  border-radius: 100px;
+  margin-bottom: 5%;
   }
   
   
@@ -159,9 +164,25 @@ align-items: center;
 
 
 }
+.banner{
+  justify-content: center;
+}
 
 .comentarioss {
 margin-left: 460px;
 padding-right: 200px;
+background-color: rgb(43, 44, 43,0.4);
+color: rgba(199, 226, 226);
+margin-bottom: 1%;
+
+}
+.infoPodcast{
+  color:rgba(199, 226, 226);
+  margin-left: 5%;
+}
+
+@media (max-width:460px){
+
+ 
 
 }
