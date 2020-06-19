@@ -21,8 +21,23 @@ window.onload =function(){
     if (trackplaylist.includes(id)) {
       document.querySelector("#button").innerHTML = "Quitar de mi Playlist";
     }
+
+
+    // esto me esta rompiendo el localStorage de Playlisttttt 
   
-document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+/*document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+    fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+id)
+var contenedorIframe = document.querySelector('.iframe-cancion')
+contenedorIframe.innerHTML = '<iframe class="cancion-player" scrolling="no" frameborder="0" allowTransparency="true" src="https://www.deezer.com/plugins/player?format=classic&autoplay=false&playlist=true&width=700&height=350&color=007FEB&layout=dark&size=medium&type=tracks&id='+id+'&app_id=1" width="100%" height="90"></iframe>'
+
+document.querySelector('.parte-album').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '
+document.querySelector('.parte-artista').innerHTML = '<img src="../img/loading gif.gif" alt="gif"></img> '*/
+
+
+
+
+
+
     fetch('https://cors-anywhere.herokuapp.com/https://api.deezer.com/track/'+id)
     .then(function(response) {
       return response.json()
@@ -61,11 +76,11 @@ document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading
         var contenedorCancion = document.querySelector('.lista-canciones')
           
   
-        var contenidoListaCanciones = '<div class="cancion-play">'
-        contenidoListaCanciones += '<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
-        contenidoListaCanciones += '<a  href="#button">'+nombreCancion+'</a>'
-        contenidoListaCanciones += '</div> '
-        contenidoListaCanciones += '<div class="duracion">'+tiempoMinuto+':'+segundos+'</div>'
+        // var contenidoListaCanciones = '<div class="cancion-play">'
+        // contenidoListaCanciones += '<i id="play-circle-cancion" class="fa fa-play-circle-o fa-2x" aria-hidden="true"></i>'
+        // contenidoListaCanciones += '<a  href="#button">'+nombreCancion+'</a>'
+        // contenidoListaCanciones += '</div> '
+        var contenidoListaCanciones = '<div class="duracion">Duracion: '+tiempoMinuto+':'+segundos+'</div>'
   
         contenedorCancion.innerHTML = contenidoListaCanciones
   
@@ -136,6 +151,32 @@ document.querySelector('.lista-canciones').innerHTML = '<img src="../img/loading
 
 
 
+
+
+var boton = document.querySelector('#button')
+
+
+// var miObjeto = [];
+
+// localStorage.setItem('listaPlaylist', JSON.stringify(miObjeto));
+
+/*boton.onclick = function(){
+
+  if (JSON.parse(localStorage.getItem('listaPlaylist')) === null) {
+    var nuevaLista = [id];
+    localStorage.setItem('listaPlaylist', JSON.stringify(nuevaLista));
+
+  } else {
+    var miLista = JSON.parse(localStorage.getItem('listaPlaylist'))
+    miLista.push(id)
+    localStorage.setItem('listaPlaylist', JSON.stringify(miLista));
+
+  }
+
+
+}*//// boton.onclick
+
+console.log(JSON.parse(localStorage.getItem('listaPlaylist')))
 
   }// cierra window.onload
 
