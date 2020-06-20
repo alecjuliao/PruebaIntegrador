@@ -26,6 +26,7 @@ h1{
 
 .informacion-podcast{
   display: flex;
+  flex-wrap: wrap;
   margin: auto;
   margin-bottom: 3%;
   box-sizing: border-box;
@@ -48,6 +49,7 @@ h1{
 .informacion{
   margin-left: 5%;
   color: white;
+  width: 60%;
 }
 .informacion h4{
   
@@ -58,3 +60,13 @@ h1{
   color: white;
   text-decoration: none;
 }
+
+/* @media (max-width:460px){
+  .imagen-podcast img{
+    
+    border-radius: 100%;
+    width: 55%;
+  margin: auto;
+  }
+
+} */
