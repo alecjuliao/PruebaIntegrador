@@ -6,21 +6,24 @@ body{
     background-color: rgb(9, 17, 19);
   }
   
-html {
-    background-color: rgb(36, 35, 35);
-}
+
 .listageneros{
     width: 90%;
     margin: auto;
+    background-color: rgba(30, 30, 30, 0.4);
 }
-
-.contenedorprincipal {
-    margin: 0 auto;
-   
-}   
-
+ 
+.titulo{
+    width: fit-content;
+    margin: auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
 h1 {
   color: white;
+  width: fit-content;
+  text-transform: capitalize;
+  
   
 }
 a  {
@@ -28,161 +31,49 @@ text-decoration: none;
 color: white;
 }
 
-.contenedorarticle {
-    display:grid;
-    width: 90%;
-    grid-template-columns: 33%;
-    margin: 0 auto;
-    border-radius: 1px solid aqua;
-    
-
-
+.listageneros{
+   /* display: flex;
+   flex-wrap: wrap; */
+    margin: 3%;
 }
 
-.imggeneros {
-width: 25%;
-border-radius: 50%;
-}
-/*h1.titulo-genero{
 
 
-
-}*/
-.titulo-genero{
-    width: 50%;
-    margin-left: 25%;
-    margin-top: 0;
-    text-decoration: none;
-    color: white; 
-    
-}
-
-.img-generos{
+.img-generos1{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    flex-direction: row;
     padding: 0;
     list-style: none;
-    margin: 0;
     text-decoration: none white; 
+    width: 95%;
+    margin: auto;
+    justify-content: space-evenly;
     
 }
 
-.img-generos li {
-    width: 15%;
+.img-generos1 li {
+    width: 12%;
+    margin: 1%;
     
 }
-.img-generos li a img {
+.img-generos1 h2{
+    width: fit-content;
+    margin: auto;
+    font-size: medium;
+}
+.img-generos1 li a img {
     width: 100%;
-    border-radius: 200px 200px 200px 200px;  
+     
       
 }
-.imgdeezer {
-    width: 15%;
-    margin-left: 4%;
-}
-
-.imgdeezer:hover {
-border-radius:50%;
-box-shadow: 0px 0px 15px 15px #6b04f1;
-transform: rotateY(360deg);
-transition: 1s ease;
-}
-
-.nombresig {
- width: 15%; 
-}
-
-.nombresa {
-    color: aliceblue;
-    margin-left: 5%;
-}
-
-.nombresa:hover {
-   color: royalblue;
-   font-size: large;
-   font-family: fantasy;
-}
-
-.nombresm {
-    color: aliceblue;
-    margin-left: 5%;
-}
-
-.nombresm:hover {
-    color: royalblue;
-    font-size: large;
-    font-family: fantasy;
- }
-
-.nombresmp {
-    color: aliceblue;
-    margin-left: 5%;
-}
-
-.nombresmp:hover {
-    color: royalblue;
-    font-size: large;
-    font-family: fantasy;
- }
-
- .slider {
-     width: 50%;
-     margin: auto;
-     overflow: hidden;
- }
-
- .slider ul {
-     display: flex;
-     padding: 0; 
-     width: 400%;
-     animation: cambio 20s infinite;
-
- }
-
- .slider li {
-     width: 100%;
-     list-style: none;
- }
-
- .slider img {
-     width: 100%;
- }
-
-   @keyframes cambio {
-     0% {margin-left: 0;}
-     20% {margin-left: 0;}
+.img-generos1 li :hover img{
+    opacity: 0.2;
      
-     25% {margin-left: -100%;}
-     45% {margin-left: -100%;}
-
-     50% {margin-left: -200%;}
-     70% {margin-left: -200%;}
-
-     75% {margin-left: -300%;}
-     100% {margin-left: -300%;}
-
- }
-
- .img-generos1{
-     display: flex;
-     list-style: none;
-     flex-wrap: wrap;
-     margin: 0;
-     padding: 0;
-     justify-content: space-around;
- }
- .img-generos1 li a img {
-     width: 10vw;
- 
- }
- .img-generos1 li a h2 {
-    width: 10vw;
-    text-align: center;
+      
 }
-footer{
-    display:flex;
-    position: relative;
-    
-
+.img-generos1 li :hover h2{
+    text-decoration: underline;
+     
+      
 }
